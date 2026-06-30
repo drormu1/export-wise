@@ -1,0 +1,14 @@
+<Configuration>
+  <VGpu>Disable</VGpu>
+  <Networking>Enable</Networking>
+  <MappedFolders>
+    <MappedFolder>
+      <HostFolder>C:\worksapce\dror\ExportWise</HostFolder>
+      <SandboxFolder>C:\Work\ExportWise</SandboxFolder>
+      <ReadOnly>false</ReadOnly>
+    </MappedFolder>  
+  </MappedFolders>
+  <LogonCommand>
+    <Command>cmd /k cd /d C:\Work\ExportWise</Command>
+  </LogonCommand>
+</Configuration>
