@@ -9,6 +9,8 @@ dotenv.config({ path: ENV_PATH });
 
 async function bootstrap(): Promise<void> {
   const app = await NestFactory.create(AppModule);
+  // The Angular dev proxy avoids CORS in dev; enableCors is a safety net for direct calls.
+  app.enableCors({ origin: process.env.CLIENT_ORIGIN ?? true });
   const port = Number(process.env.PORT ?? 3000);
   await app.listen(port);
   Logger.log(`API listening on http://localhost:${port}`, 'Bootstrap');

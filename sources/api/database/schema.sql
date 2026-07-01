@@ -24,13 +24,15 @@ CREATE TABLE IF NOT EXISTS Manufacturer (
 
 -- Product
 -- sku: unique SKU in format {manufacturerCode}-{number}, e.g. 'TNV-001'
+-- manufacturerId: the manufacturer that makes this product (resolved from the SKU prefix at seed time)
 CREATE TABLE IF NOT EXISTS Product (
-    id          INTEGER PRIMARY KEY AUTOINCREMENT,
-    sku   TEXT    NOT NULL UNIQUE,
-    name        TEXT    NOT NULL,
-    category    TEXT    NOT NULL,
-    ingredients TEXT,
-    description TEXT
+    id             INTEGER PRIMARY KEY AUTOINCREMENT,
+    sku            TEXT    NOT NULL UNIQUE,
+    manufacturerId INTEGER NOT NULL REFERENCES Manufacturer(id),
+    name           TEXT    NOT NULL,
+    category       TEXT    NOT NULL,
+    ingredients    TEXT,
+    description    TEXT
 );
 
 -- CommitteeDecision
@@ -48,7 +50,8 @@ CREATE TABLE IF NOT EXISTS CommitteeDecision (
     decisionDate    TEXT    NOT NULL
 );
 
-CREATE INDEX IF NOT EXISTS idx_product_sku     ON Product(sku);
+CREATE INDEX IF NOT EXISTS idx_product_sku          ON Product(sku);
+CREATE INDEX IF NOT EXISTS idx_product_manufacturer ON Product(manufacturerId);
 CREATE INDEX IF NOT EXISTS idx_cd_manufacturer     ON CommitteeDecision(manufacturerId);
 CREATE INDEX IF NOT EXISTS idx_cd_product          ON CommitteeDecision(productId);
 CREATE INDEX IF NOT EXISTS idx_cd_country          ON CommitteeDecision(countryId);

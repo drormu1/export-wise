@@ -38,6 +38,9 @@ Create these tables based on the architecture model:
 
 #### `Product`
 - `id`
+- `sku` (unique, format `{manufacturerCode}-{number}`, e.g. `TNV-001`)
+- `manufacturerId` (FK → `Manufacturer(id)`; the manufacturer that makes this product,
+  resolved from the SKU prefix at seed time)
 - `name`
 - `category`
 - `ingredients`
