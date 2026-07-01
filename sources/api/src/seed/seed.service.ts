@@ -1,8 +1,12 @@
 import { Injectable, Logger } from '@nestjs/common';
+import { DataSource } from 'typeorm';
 import * as fs from 'fs';
 import * as path from 'path';
-import { DatabaseService } from '../database/database.service';
-import { MOCK_DIR, SCHEMA_PATH } from '../config/paths';
+import { MOCK_DIR } from '../config/paths';
+import { Country } from '../entities/country.entity';
+import { Manufacturer } from '../entities/manufacturer.entity';
+import { Product } from '../entities/product.entity';
+import { CommitteeDecision } from '../entities/committee-decision.entity';
 
 interface CountryJson {
   name: string;
@@ -42,24 +46,20 @@ export interface SeedResult {
     CommitteeDecision: number;
   };
   skippedDecisions: number;
-  dbPath: string;
 }
 
 @Injectable()
 export class SeedService {
   private readonly logger = new Logger(SeedService.name);
 
-  constructor(private readonly db: DatabaseService) {}
+  constructor(private readonly dataSource: DataSource) {}
 
   /**
-   * Applies the schema (idempotent) then reloads all four tables from the mock
-   * JSON files. Safe to re-run: existing rows are cleared in FK-safe order
-   * inside a single transaction, so a failure leaves the DB unchanged.
+   * Reloads all four tables from the mock JSON files. Tables are created by
+   * TypeORM synchronize on connection. Safe to re-run: existing rows are cleared
+   * in FK-safe order inside a single transaction, so a failure leaves the DB unchanged.
    */
-  seed(): SeedResult {
-    // Ensure tables exist even if db:init was never run (CREATE ... IF NOT EXISTS).
-    this.db.exec(fs.readFileSync(SCHEMA_PATH, 'utf8'));
-
+  async seed(): Promise<SeedResult> {
     const countries = this.readJson<CountryJson[]>('countries.json');
     const manufacturers = this.readJson<ManufacturerJson[]>('manufacturers.json');
     const products = this.readJson<ProductJson[]>('products.json');
@@ -67,89 +67,83 @@ export class SeedService {
 
     let skippedDecisions = 0;
 
-    this.db.transaction(() => {
+    await this.dataSource.transaction(async (em) => {
       // Clear in FK-safe order (children before parents).
-      this.db.run('DELETE FROM CommitteeDecision');
-      this.db.run('DELETE FROM Product');
-      this.db.run('DELETE FROM Manufacturer');
-      this.db.run('DELETE FROM Country');
+      await em.createQueryBuilder().delete().from(CommitteeDecision).execute();
+      await em.createQueryBuilder().delete().from(Product).execute();
+      await em.createQueryBuilder().delete().from(Manufacturer).execute();
+      await em.createQueryBuilder().delete().from(Country).execute();
 
-      const countryIds = countries.map((c) =>
-        Number(this.db.run('INSERT INTO Country (name, region) VALUES (?, ?)', [c.name, c.region]).lastInsertRowid),
+      const countryRows = await em.save(
+        Country,
+        countries.map((c) => ({ name: c.name, region: c.region })),
       );
 
-      const manufacturerIds: number[] = [];
-      const manufacturerIdByCode = new Map<string, number>();
-      for (const m of manufacturers) {
-        const id = Number(
-          this.db.run('INSERT INTO Manufacturer (code, name) VALUES (?, ?)', [m.code, m.name]).lastInsertRowid,
-        );
-        manufacturerIds.push(id);
-        manufacturerIdByCode.set(m.code, id);
-      }
+      const manufacturerRows = await em.save(
+        Manufacturer,
+        manufacturers.map((m) => ({ code: m.code, name: m.name })),
+      );
+      const idByCode = new Map(manufacturerRows.map((m) => [m.code, m.id]));
 
-      const productIds = products.map((p) => {
-        // A product's manufacturer is encoded in its SKU prefix, e.g. "TNV-001" -> "TNV".
-        const code = p.sku.split('-')[0];
-        const manufacturerId = manufacturerIdByCode.get(code);
-        if (manufacturerId === undefined) {
-          // Fail loudly rather than inserting a product with no manufacturer.
-          throw new Error(`Product "${p.sku}": SKU prefix "${code}" matches no manufacturer code`);
-        }
-        return Number(
-          this.db.run(
-            'INSERT INTO Product (sku, manufacturerId, name, category, ingredients, description) VALUES (?, ?, ?, ?, ?, ?)',
-            [p.sku, manufacturerId, p.name, p.category, p.ingredients ?? null, p.description ?? null],
-          ).lastInsertRowid,
-        );
-      });
+      const productRows = await em.save(
+        Product,
+        products.map((p) => {
+          // A product's manufacturer is encoded in its SKU prefix, e.g. "TNV-001" -> "TNV".
+          const code = p.sku.split('-')[0];
+          const manufacturerId = idByCode.get(code);
+          if (manufacturerId === undefined) {
+            throw new Error(`Product "${p.sku}": SKU prefix "${code}" matches no manufacturer code`);
+          }
+          return {
+            sku: p.sku,
+            manufacturerId,
+            name: p.name,
+            category: p.category,
+            ingredients: p.ingredients ?? undefined,
+            description: p.description ?? undefined,
+          };
+        }),
+      );
 
-      for (const d of decisions) {
-        // Resolve JSON array indexes to real DB ids; skip rows with bad references.
-        if (!this.inRange(d.countryId, countryIds) || !this.inRange(d.productId, productIds) || !this.inRange(d.manufacturerId, manufacturerIds)) {
-          skippedDecisions += 1;
-          continue;
-        }
+      const decisionRows = decisions
+        .filter((d) => {
+          const ok =
+            this.inRange(d.countryId, countryRows.length) &&
+            this.inRange(d.productId, productRows.length) &&
+            this.inRange(d.manufacturerId, manufacturerRows.length);
+          if (!ok) skippedDecisions += 1;
+          return ok;
+        })
+        .map((d) => ({
+          manufacturerId: manufacturerRows[d.manufacturerId].id,
+          productId: productRows[d.productId].id,
+          countryId: countryRows[d.countryId].id,
+          decisionStatus: d.decisionStatus,
+          decisionReason: d.decisionReason ?? undefined,
+          conditions: d.conditions ?? undefined,
+          risks: d.risks ?? undefined,
+          decisionDate: d.decisionDate,
+        }));
 
-        this.db.run(
-          `INSERT INTO CommitteeDecision
-             (manufacturerId, productId, countryId, decisionStatus, decisionReason, conditions, risks, decisionDate)
-           VALUES (?, ?, ?, ?, ?, ?, ?, ?)`,
-          [
-            manufacturerIds[d.manufacturerId],
-            productIds[d.productId],
-            countryIds[d.countryId],
-            d.decisionStatus,
-            d.decisionReason ?? null,
-            d.conditions ?? null,
-            d.risks ?? null,
-            d.decisionDate,
-          ],
-        );
-      }
+      await em.save(CommitteeDecision, decisionRows);
     });
 
     const result: SeedResult = {
       counts: {
-        Country: this.count('Country'),
-        Manufacturer: this.count('Manufacturer'),
-        Product: this.count('Product'),
-        CommitteeDecision: this.count('CommitteeDecision'),
+        Country: await this.dataSource.getRepository(Country).count(),
+        Manufacturer: await this.dataSource.getRepository(Manufacturer).count(),
+        Product: await this.dataSource.getRepository(Product).count(),
+        CommitteeDecision: await this.dataSource.getRepository(CommitteeDecision).count(),
       },
       skippedDecisions,
-      dbPath: this.db.dbPath,
     };
 
     this.logger.log(`Seed complete: ${JSON.stringify(result.counts)} (skipped ${skippedDecisions})`);
     return result;
   }
 
-  private inRange(index: number, ids: number[]): boolean {
-    return Number.isInteger(index) && index >= 0 && index < ids.length;
-  }
-
-  private count(table: string): number {
-    return this.db.get<{ n: number }>(`SELECT COUNT(*) AS n FROM ${table}`)?.n ?? 0;
+  private inRange(index: number, length: number): boolean {
+    return Number.isInteger(index) && index >= 0 && index < length;
   }
 
   private readJson<T>(fileName: string): T {

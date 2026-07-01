@@ -19,6 +19,10 @@ Any conflict between SQL and other layers must be resolved in favor of SQL data.
 - Default for current POC: SQLite
 - Optional/target for future migration: SQL Server
 - Data layer should stay provider-agnostic (`sqlite | sqlserver`).
+- **Implemented via TypeORM** (`@nestjs/typeorm`): shared entities + repositories run on
+  both providers. Switching is `DB_PROVIDER=sqlserver` plus the mssql connection vars —
+  see `sources/api/src/database/data-source.options.ts`. Entities live in
+  `sources/api/src/entities/`; POC uses `synchronize: true` (move to migrations before production).
 
 ## Base Seed Scope (POC)
 Initial seed must load exactly:

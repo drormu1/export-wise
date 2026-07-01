@@ -9,7 +9,7 @@ dotenv.config({ path: ENV_PATH });
 
 /**
  * Standalone seed entry point (npm run db:seed). Boots a headless Nest context
- * so the seed logic reuses the same DI'd DatabaseService as the HTTP app.
+ * so the seed logic reuses the same TypeORM DataSource as the HTTP app.
  */
 async function main(): Promise<void> {
   const app = await NestFactory.createApplicationContext(SeedModule, {
@@ -17,7 +17,7 @@ async function main(): Promise<void> {
   });
 
   try {
-    const result = app.get(SeedService).seed();
+    const result = await app.get(SeedService).seed();
     // eslint-disable-next-line no-console
     console.log('\nInserted row counts:');
     // eslint-disable-next-line no-console
@@ -26,8 +26,6 @@ async function main(): Promise<void> {
       // eslint-disable-next-line no-console
       console.log(`Skipped ${result.skippedDecisions} decision(s) with out-of-range references.`);
     }
-    // eslint-disable-next-line no-console
-    console.log(`Database: ${result.dbPath}`);
   } finally {
     await app.close();
   }
