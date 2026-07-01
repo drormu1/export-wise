@@ -1,5 +1,8 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
-import { DatabaseService } from '../database/database.service';
+import { InjectRepository } from '@nestjs/typeorm';
+import { Repository } from 'typeorm';
+import { Manufacturer } from '../entities/manufacturer.entity';
+import { Product } from '../entities/product.entity';
 
 export interface ManufacturerSummary {
   id: number;
@@ -14,33 +17,37 @@ export interface ManufacturerRef {
   name: string;
 }
 
-export interface ProductRow {
-  id: number;
-  sku: string;
-  name: string;
-  category: string;
-  ingredients: string | null;
-  description: string | null;
-}
-
 export interface ManufacturerProductsResult {
   manufacturer: ManufacturerRef;
-  products: ProductRow[];
+  products: Product[];
 }
 
 @Injectable()
 export class ManufacturerService {
-  constructor(private readonly db: DatabaseService) {}
+  constructor(
+    @InjectRepository(Manufacturer) private readonly manufacturers: Repository<Manufacturer>,
+    @InjectRepository(Product) private readonly products: Repository<Product>,
+  ) {}
 
   /** All manufacturers with how many products each makes (helps discover valid ids). */
-  listAll(): ManufacturerSummary[] {
-    return this.db.query<ManufacturerSummary>(
-      `SELECT m.id, m.code, m.name, COUNT(p.id) AS productCount
-         FROM Manufacturer m
-         LEFT JOIN Product p ON p.manufacturerId = m.id
-        GROUP BY m.id, m.code, m.name
-        ORDER BY m.name`,
-    );
+  async listAll(): Promise<ManufacturerSummary[]> {
+    const rows = await this.manufacturers
+      .createQueryBuilder('m')
+      .leftJoin(Product, 'p', 'p.manufacturerId = m.id')
+      .select('m.id', 'id')
+      .addSelect('m.code', 'code')
+      .addSelect('m.name', 'name')
+      .addSelect('COUNT(p.id)', 'productCount')
+      .groupBy('m.id')
+      .orderBy('m.name')
+      .getRawMany<{ id: number; code: string; name: string; productCount: number }>();
+
+    return rows.map((r) => ({
+      id: Number(r.id),
+      code: r.code,
+      name: r.name,
+      productCount: Number(r.productCount),
+    }));
   }
 
   /**
@@ -48,23 +55,20 @@ export class ManufacturerService {
    * vector-search query. Throws 404 if the manufacturer id does not exist;
    * an empty product list is a valid result.
    */
-  getProducts(manufacturerId: number): ManufacturerProductsResult {
-    const manufacturer = this.db.get<ManufacturerRef>(
-      'SELECT id, code, name FROM Manufacturer WHERE id = ?',
-      [manufacturerId],
-    );
+  async getProducts(manufacturerId: number): Promise<ManufacturerProductsResult> {
+    const manufacturer = await this.manufacturers.findOne({ where: { id: manufacturerId } });
     if (!manufacturer) {
       throw new NotFoundException(`Manufacturer ${manufacturerId} not found`);
     }
 
-    const products = this.db.query<ProductRow>(
-      `SELECT id, sku, name, category, ingredients, description
-         FROM Product
-        WHERE manufacturerId = ?
-        ORDER BY name`,
-      [manufacturerId],
-    );
+    const products = await this.products.find({
+      where: { manufacturerId },
+      order: { name: 'ASC' },
+    });
 
-    return { manufacturer, products };
+    return {
+      manufacturer: { id: manufacturer.id, code: manufacturer.code, name: manufacturer.name },
+      products,
+    };
   }
 }

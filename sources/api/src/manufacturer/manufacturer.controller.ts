@@ -7,8 +7,8 @@ export class ManufacturerController {
 
   /** GET /manufacturers -> { manufacturers: [{ id, code, name, productCount }] } */
   @Get()
-  list() {
-    return { manufacturers: this.manufacturers.listAll() };
+  async list() {
+    return { manufacturers: await this.manufacturers.listAll() };
   }
 
   /** GET /manufacturers/:id/products -> { manufacturer, products } (404 if id unknown). */

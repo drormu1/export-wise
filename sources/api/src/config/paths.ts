@@ -25,9 +25,6 @@ const apiRoot = findApiRoot();
 /** Absolute path to the mock-jsons directory used for seeding. */
 export const MOCK_DIR = path.join(apiRoot, 'mock-jsons');
 
-/** Absolute path to the SQL schema file. */
-export const SCHEMA_PATH = path.join(apiRoot, 'database', 'schema.sql');
-
 /** Absolute path to the repository-root .env (two levels above sources/api). */
 export const ENV_PATH = path.resolve(apiRoot, '..', '..', '.env');
 

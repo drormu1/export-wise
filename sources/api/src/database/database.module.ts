@@ -1,13 +1,19 @@
 import { Global, Module } from '@nestjs/common';
-import { DatabaseService } from './database.service';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { buildDataSourceOptions } from './data-source.options';
 
 /**
- * Global so a single DatabaseService (one SQLite connection) is shared across
- * all feature modules without re-importing.
+ * Global TypeORM root connection. Uses forRootAsync so the factory runs during
+ * bootstrap (after dotenv has loaded), and re-exports TypeOrmModule so the
+ * shared DataSource is injectable everywhere.
  */
 @Global()
 @Module({
-  providers: [DatabaseService],
-  exports: [DatabaseService],
+  imports: [
+    TypeOrmModule.forRootAsync({
+      useFactory: () => buildDataSourceOptions(),
+    }),
+  ],
+  exports: [TypeOrmModule],
 })
 export class DatabaseModule {}

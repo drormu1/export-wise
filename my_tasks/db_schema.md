@@ -16,6 +16,13 @@ Use the conceptual model in `architecture.md`:
 
 ## Scope
 
+> **Update (TypeORM migration):** the data layer now uses **TypeORM** (`@nestjs/typeorm`).
+> Tables are defined as entities under `sources/api/src/entities/` and created via
+> `synchronize: true` — the old `schema.sql` and `db:init` were removed. Provider is chosen
+> by `DB_PROVIDER` (`sqlite` default via the `better-sqlite3` driver; `sqlserver`/`mssql` for
+> SQL Server), configured in `sources/api/src/database/data-source.options.ts`.
+> `npm run db:seed` connects (auto-creating tables) and loads the mock data.
+
 ### 1) Create SQLite DB
 - Create a local SQLite database file for the project.
 - Keep the data layer compatible with future SQL Server migration.
