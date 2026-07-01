@@ -1,0 +1,67 @@
+<div class="chat">
+  <header class="chat__header">
+    <div class="chat__brand">ExportWise</div>
+    <div class="chat__hint">הקלד מזהה יצרן (1–50) כדי לראות את המוצרים שלו</div>
+  </header>
+
+  <div class="messages" #scroll>
+    @for (m of messages(); track m.id) {
+      <div class="row" [class.row--user]="m.role === 'user'">
+        @if (m.role === 'user') {
+          <div class="bubble bubble--user">{{ m.text }}</div>
+        } @else {
+          <div class="bubble bubble--assistant">
+            @switch (m.state) {
+              @case ('loading') {
+                <span class="dots"><span></span><span></span><span></span></span>
+              }
+              @case ('error') {
+                <span class="state state--error">{{ m.text }}</span>
+              }
+              @case ('empty') {
+                <span class="state state--muted">{{ m.text }}</span>
+              }
+              @case ('ok') {
+                <div class="answer" dir="rtl">
+                  <div class="answer__title">{{ m.text }}</div>
+                  <ul class="products">
+                    @for (p of m.products; track p.id) {
+                      <li class="product">
+                        <div class="product__name">{{ p.name }}</div>
+                        <div class="product__meta">
+                          <span class="chip">{{ p.category }}</span>
+                          <span class="sku">{{ p.sku }}</span>
+                        </div>
+                        @if (p.description) {
+                          <div class="product__desc">{{ p.description }}</div>
+                        }
+                      </li>
+                    }
+                  </ul>
+                </div>
+              }
+            }
+          </div>
+        }
+      </div>
+    } @empty {
+      <div class="placeholder">👋 הקלד מזהה יצרן (למשל <b>1</b>) ולחץ Enter</div>
+    }
+  </div>
+
+  <form class="composer" (submit)="$event.preventDefault(); submit(box)">
+    <textarea
+      #box
+      class="composer__input"
+      rows="1"
+      dir="auto"
+      placeholder="הקלד מזהה יצרן…"
+      [disabled]="sending()"
+      (input)="autosize(box)"
+      (keydown.enter)="onEnter($event, box)"
+    ></textarea>
+    <button type="submit" class="composer__send" [disabled]="sending()" aria-label="שלח">
+      ➤
+    </button>
+  </form>
+</div>

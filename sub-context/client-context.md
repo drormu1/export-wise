@@ -73,3 +73,16 @@ Note: this action is optional for UI scope and can stay outside public UI.
 - Optional supporting cases panel
 - Optional risks/conditions panel
 - Simple and readable layout over feature complexity
+
+## Current POC Implementation (concrete)
+- **Stack:** Angular (latest stable), standalone components, signals, plain CSS (no UI framework).
+- **UX:** a single, ChatGPT-like screen — a sticky bottom text input, with the scrollable
+  history of questions and answers above it.
+- **Temporary query:** the user types a **numeric manufacturer id**; the app calls
+  `GET /manufacturers/:id/products` and renders the manufacturer's products (Hebrew, RTL).
+  This is a placeholder until the real vector-DB semantic search exists.
+- **Swap seam:** the API call lives in one `ApiService` method (`askForProducts`) so it can be
+  replaced by `/ai/search` with minimal change; components never build URLs directly.
+- **Dev integration:** Angular dev proxy (`/api` → `http://localhost:3000`) so calls are
+  same-origin and CORS is avoided in development.
+- **States:** loading, empty (manufacturer has no products), and error (e.g. 404) are shown clearly.

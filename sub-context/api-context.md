@@ -39,6 +39,17 @@ Suggested endpoints:
 - `POST /ai/search`
 - `POST /ai/chat`
 
+### 2a) Temporary Query Placeholder (until Vector DB exists)
+Until semantic search is implemented, the client's query is served by a simple
+SQL lookup by manufacturer. These endpoints are a stopgap and will be superseded
+by `/ai/search`:
+- `GET /manufacturers` → `{ manufacturers: [{ id, code, name, productCount }] }`
+  (helper to discover valid manufacturer ids).
+- `GET /manufacturers/:id/products` → `{ manufacturer: { id, code, name }, products: [...] }`;
+  `404` if the id is unknown; empty `products` is a valid result.
+Backed by the `Product.manufacturerId` FK. The Angular client isolates this call in a
+single service method so it can be swapped for `/ai/search` later.
+
 ## Mandatory Post-Load Contract
 After each successful iteration load:
 1. Persist new SQL `licenses` rows (non-conflicting composite keys).

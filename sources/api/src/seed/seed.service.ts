@@ -78,18 +78,31 @@ export class SeedService {
         Number(this.db.run('INSERT INTO Country (name, region) VALUES (?, ?)', [c.name, c.region]).lastInsertRowid),
       );
 
-      const manufacturerIds = manufacturers.map((m) =>
-        Number(this.db.run('INSERT INTO Manufacturer (code, name) VALUES (?, ?)', [m.code, m.name]).lastInsertRowid),
-      );
+      const manufacturerIds: number[] = [];
+      const manufacturerIdByCode = new Map<string, number>();
+      for (const m of manufacturers) {
+        const id = Number(
+          this.db.run('INSERT INTO Manufacturer (code, name) VALUES (?, ?)', [m.code, m.name]).lastInsertRowid,
+        );
+        manufacturerIds.push(id);
+        manufacturerIdByCode.set(m.code, id);
+      }
 
-      const productIds = products.map((p) =>
-        Number(
+      const productIds = products.map((p) => {
+        // A product's manufacturer is encoded in its SKU prefix, e.g. "TNV-001" -> "TNV".
+        const code = p.sku.split('-')[0];
+        const manufacturerId = manufacturerIdByCode.get(code);
+        if (manufacturerId === undefined) {
+          // Fail loudly rather than inserting a product with no manufacturer.
+          throw new Error(`Product "${p.sku}": SKU prefix "${code}" matches no manufacturer code`);
+        }
+        return Number(
           this.db.run(
-            'INSERT INTO Product (sku, name, category, ingredients, description) VALUES (?, ?, ?, ?, ?)',
-            [p.sku, p.name, p.category, p.ingredients ?? null, p.description ?? null],
+            'INSERT INTO Product (sku, manufacturerId, name, category, ingredients, description) VALUES (?, ?, ?, ?, ?, ?)',
+            [p.sku, manufacturerId, p.name, p.category, p.ingredients ?? null, p.description ?? null],
           ).lastInsertRowid,
-        ),
-      );
+        );
+      });
 
       for (const d of decisions) {
         // Resolve JSON array indexes to real DB ids; skip rows with bad references.
