@@ -74,6 +74,13 @@ export class SeedService {
       await em.createQueryBuilder().delete().from(Manufacturer).execute();
       await em.createQueryBuilder().delete().from(Country).execute();
 
+      // Reset auto-increment counters so ids are deterministic (1..N) on every reseed.
+      // (SQLite POC; SQL Server would reset identity differently.)
+      const dbType = this.dataSource.options.type as string;
+      if (dbType === 'better-sqlite3' || dbType === 'sqlite') {
+        await em.query('DELETE FROM sqlite_sequence');
+      }
+
       const countryRows = await em.save(
         Country,
         countries.map((c) => ({ name: c.name, region: c.region })),
