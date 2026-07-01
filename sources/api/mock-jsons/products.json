@@ -1,352 +1,1402 @@
 [
   {
     "sku": "TNV-001",
-    "name": "גבינה צהובה עמק",
-    "category": "מוצרי חלב",
-    "ingredients": "חלב פסטורי, מלח, תרביות חיידקים, מעמיל E407",
-    "description": "גבינה צהובה קשה מחלב פרות מלא, מתאימה לכריכים ובישול"
+    "name": "קוטג' תנובה 5%",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "גבינת קוטג' 5% שומן"
   },
   {
     "sku": "TNV-002",
-    "name": "גבינה לבנה 5%",
-    "category": "מוצרי חלב",
-    "ingredients": "חלב פסטורי מופחת שומן, מלח, תרביות חיידקים",
-    "description": "גבינה לבנה רכה בעלת אחוז שומן נמוך"
+    "name": "חלב טרי תנובה 3%",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "חלב טרי מפוסטר 3%"
   },
   {
-    "sku": "STR-001",
-    "name": "יוגורט פירות תות",
-    "category": "מוצרי חלב",
-    "ingredients": "חלב פסטורי, תרביות יוגורט, תות שדה 8%, סוכר",
-    "description": "יוגורט קרמי עם פירות תות אמיתיים"
+    "sku": "TNV-003",
+    "name": "גבינה צהובה עמק",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "גבינה צהובה קשה"
   },
   {
-    "sku": "YTV-001",
-    "name": "חמאה יטבתה",
-    "category": "מוצרי חלב",
-    "ingredients": "שמנת פסטורית, מלח",
-    "description": "חמאה טבעית מחלב פרות עדר גולן"
+    "sku": "TNV-004",
+    "name": "שמנת חמוצה 15%",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "שמנת חמוצה"
   },
   {
-    "sku": "GAD-001",
-    "name": "קוטג' גד",
-    "category": "מוצרי חלב",
-    "ingredients": "חלב פסטורי, שמנת, מלח, תרביות חיידקים",
-    "description": "גבינת קוטג' עשירה וקרמית"
+    "sku": "TNV-005",
+    "name": "מעדן יולו",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "מעדן חלב לילדים"
   },
   {
-    "sku": "GLN-001",
-    "name": "גבינה צפתית",
-    "category": "מוצרי חלב",
-    "ingredients": "חלב כבשים פסטורי, מלח, תרביות חיידקים",
-    "description": "גבינה צפתית מסורתית מחלב כבשים"
+    "sku": "TNV-006",
+    "name": "שוקו תנובה",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "משקה שוקו בקרטון"
   },
   {
-    "sku": "HLV-001",
-    "name": "שמנת מתוקה 38%",
-    "category": "מוצרי חלב",
-    "ingredients": "שמנת פסטורית",
-    "description": "שמנת מתוקה עשירה לקצפת ובישול גורמה"
+    "sku": "TNV-007",
+    "name": "יוגורט גיל",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "יוגורט ביו"
   },
   {
-    "sku": "GVN-001",
-    "name": "גבינת בולגרית",
-    "category": "מוצרי חלב",
-    "ingredients": "חלב כבשים ועיזים, מלח, תרביות חיידקים",
-    "description": "גבינה בסגנון בולגרי בטעם חריף"
-  },
-  {
-    "sku": "HAR-001",
-    "name": "שניצל עוף פרוס",
-    "category": "בשר ועוף",
-    "ingredients": "חזה עוף 95%, מים, מלח, שמן קנולה, פנירה",
-    "description": "שניצל עוף פרוס ומוכן לטיגון, ללא חומרים משמרים"
-  },
-  {
-    "sku": "HAR-002",
-    "name": "נקניקיות עוף",
-    "category": "בשר ועוף",
-    "ingredients": "בשר עוף 80%, מים, מלח, תבלינים, חלבון סויה",
-    "description": "נקניקיות עוף עסיסיות לגריל ולמחבת"
-  },
-  {
-    "sku": "SLM-001",
-    "name": "המבורגר בקר טרי",
-    "category": "בשר ועוף",
-    "ingredients": "בשר בקר טחון 90%, בצל, מלח, פלפל שחור",
-    "description": "קציצות המבורגר טריות מבשר בקר איכותי"
-  },
-  {
-    "sku": "SLM-002",
-    "name": "קבב כבש ובקר",
-    "category": "בשר ועוף",
-    "ingredients": "בשר כבש 50%, בשר בקר 40%, בצל, פטרוזיליה, תבלינים",
-    "description": "קבב מסורתי לגריל בשילוב כבש ובקר"
-  },
-  {
-    "sku": "HAR-003",
-    "name": "סלמי איטלקי",
-    "category": "בשר ועוף",
-    "ingredients": "בשר חזיר 70%, מלח, נתרן ניטריט, תבלינים, יין אדום",
-    "description": "סלמי איטלקי מיושן בטעם עשיר ואינטנסיבי"
-  },
-  {
-    "sku": "DGN-001",
-    "name": "לחם אחיד פרוס",
-    "category": "מוצרי אפייה",
-    "ingredients": "קמח חיטה, מים, שמרים, מלח, סוכר, שמן",
-    "description": "לחם לבן רך לכריכים, פרוס ומוכן לשימוש"
-  },
-  {
-    "sku": "DGN-002",
-    "name": "לחם שיפון מחיטה מלאה",
-    "category": "מוצרי אפייה",
-    "ingredients": "קמח שיפון מלא, קמח חיטה, מים, שמרים, מלח, זרעי קימל",
-    "description": "לחם שיפון כהה עשיר בסיבים תזונתיים"
-  },
-  {
-    "sku": "AFK-001",
-    "name": "עוגיות שוקולד צ'יפס",
-    "category": "מוצרי אפייה",
-    "ingredients": "קמח, חמאה, סוכר, ביצים, שוקולד צ'יפס 20%, וניל",
-    "description": "עוגיות פריכות ומתוקות עם שבבי שוקולד"
-  },
-  {
-    "sku": "LHM-001",
-    "name": "פיתות ערביות",
-    "category": "מוצרי אפייה",
-    "ingredients": "קמח חיטה, מים, שמרים, מלח, שמן זית",
-    "description": "פיתות רכות ואווריריות לאפייה מסורתית"
+    "sku": "TNV-008",
+    "name": "גבינת נפוליאון",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "גבינת עיזים מלוחה"
   },
   {
     "sku": "OSM-001",
-    "name": "קרקרים מלוחים",
-    "category": "מוצרי אפייה",
-    "ingredients": "קמח חיטה, שמן דקלים, מלח, שמרים",
-    "description": "קרקרים פריכים ומלוחים כנשנוש קל"
-  },
-  {
-    "sku": "AFK-002",
-    "name": "רוגלך שוקולד",
-    "category": "מוצרי אפייה",
-    "ingredients": "קמח, שמן, ביצים, שוקולד, אבקת סוכר, וניל",
-    "description": "רוגלך רכים ומתוקים ממולאים שוקולד"
-  },
-  {
-    "sku": "DGL-001",
-    "name": "טונה בשמן זית",
-    "category": "דגים ופירות ים",
-    "ingredients": "טונה 75%, שמן זית, מלח",
-    "description": "טונה לבנה ואיכותית בשמן זית כתית מובחר"
-  },
-  {
-    "sku": "DGL-002",
-    "name": "סלמון מעושן",
-    "category": "דגים ופירות ים",
-    "ingredients": "פילה סלמון 95%, מלח, עשן טבעי",
-    "description": "סלמון אטלנטי מעושן בקור, פרוס דק"
-  },
-  {
-    "sku": "ATL-001",
-    "name": "סרדינים בשמן",
-    "category": "דגים ופירות ים",
-    "ingredients": "סרדינים 70%, שמן חמניות, מלח",
-    "description": "סרדינים שלמים בשמן חמניות"
-  },
-  {
-    "sku": "YMN-001",
-    "name": "שרימפס קפוא",
-    "category": "דגים ופירות ים",
-    "ingredients": "שרימפס 100%",
-    "description": "שרימפס טרי קפוא בלי קליפה מוכן לבישול"
-  },
-  {
-    "sku": "ATL-002",
-    "name": "פילה בקלה קפוא",
-    "category": "דגים ופירות ים",
-    "ingredients": "פילה בקלה 100%",
-    "description": "פילה בקלה אטלנטי קפוא ומנוקה"
+    "name": "במבה",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "חטיף בוטנים"
   },
   {
     "sku": "OSM-002",
-    "name": "במבה בוטנים",
-    "category": "חטיפים",
-    "ingredients": "קמח תירס, שמן דקלים, משחת בוטנים 12%, מלח",
-    "description": "חטיף תירס קלאסי ישראלי בטעם בוטנים"
+    "name": "ביסלי גריל",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "חטיף חיטה בטעם גריל"
   },
   {
     "sku": "OSM-003",
-    "name": "ביסלי גריל",
-    "category": "חטיפים",
-    "ingredients": "קמח חיטה, שמן דקלים, תבליני גריל, מלח",
-    "description": "חטיף חיטה פריך בטעם גריל מעושן"
+    "name": "שקדי מרק",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "שקדי מרק פריכים"
   },
   {
-    "sku": "SNK-001",
-    "name": "צ'יפס גלי מלח",
-    "category": "חטיפים",
-    "ingredients": "תפוחי אדמה, שמן חמניות, מלח ים",
-    "description": "צ'יפס גלי פריך ממתפוחי אדמה טריים"
+    "sku": "OSM-004",
+    "name": "פתיבר",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "ביסקוויט קמח מלא"
   },
   {
-    "sku": "SNK-002",
-    "name": "פופקורן חמאה",
-    "category": "חטיפים",
-    "ingredients": "תירס, חמאה, מלח, סוכר",
-    "description": "פופקורן אוורירי בטעם חמאה עשיר"
+    "sku": "OSM-005",
+    "name": "מרק עוף אסם",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "אבקת מרק עוף"
   },
   {
-    "sku": "BMS-001",
-    "name": "אגוזי קשיו קלויים",
-    "category": "חטיפים",
-    "ingredients": "קשיו 95%, שמן קנולה, מלח",
-    "description": "אגוזי קשיו שלמים קלויים ומלוחים"
+    "sku": "OSM-006",
+    "name": "קטשופ אסם",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "רוטב עגבניות"
   },
   {
-    "sku": "SNK-003",
-    "name": "חטיף עדשים",
-    "category": "חטיפים",
-    "ingredients": "עדשים, שמן זית, מלח, תבלינים",
-    "description": "חטיף בריא מעדשים קלויות"
+    "sku": "OSM-007",
+    "name": "פתיתים",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "פתיתי בצק"
   },
   {
-    "sku": "TMP-001",
-    "name": "מיץ תפוזים סחוט",
-    "category": "משקאות",
-    "ingredients": "תפוזים 100%",
-    "description": "מיץ תפוזים טרי סחוט ללא תוספות"
+    "sku": "OSM-008",
+    "name": "אפרופו",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "חטיף תירס"
   },
   {
-    "sku": "TMP-002",
-    "name": "מים מינרליים טבעיים",
-    "category": "משקאות",
-    "ingredients": "מים מינרליים טבעיים",
-    "description": "מים מינרליים מעיין הגליל, ללא גז"
+    "sku": "STR-001",
+    "name": "אשל",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "מעדן חלב חמוץ"
   },
   {
-    "sku": "MNT-001",
-    "name": "משקה קולה",
-    "category": "משקאות",
-    "ingredients": "מים, סוכר, ריכוז קולה, חומצה זרחתית, קפאין",
-    "description": "משקה קולה מוגז קלאסי"
+    "sku": "STR-002",
+    "name": "יופלה",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "יוגורט בטעמים"
   },
   {
-    "sku": "JUS-001",
-    "name": "עסיס ענבים",
-    "category": "משקאות",
-    "ingredients": "ענבים 60%, מים, סוכר, חומצת לימון",
-    "description": "עסיס ענבים סגולים מתוק ומרוכז"
+    "sku": "STR-003",
+    "name": "מילקי",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "מעדן חלב עם קצפת"
   },
   {
-    "sku": "SPR-001",
-    "name": "מים מוגזים ליים",
-    "category": "משקאות",
-    "ingredients": "מים מינרליים, גז פחמן, תמצית ליים טבעית",
-    "description": "מים מוגזים קלים בטעם ליים רענן"
+    "sku": "STR-004",
+    "name": "גבינה לבנה שטראוס 5%",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "גבינה לבנה 5%"
   },
   {
-    "sku": "MNT-002",
-    "name": "תה קר לימון",
-    "category": "משקאות",
-    "ingredients": "מים, ריכוז תה שחור, לימון 5%, סוכר, חומצת לימון",
-    "description": "תה קר מרענן בטעם לימון"
+    "sku": "STR-005",
+    "name": "מעדן דנונה",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "מעדן יוגורט"
   },
   {
-    "sku": "ALT-001",
-    "name": "שוקולד מריר 70%",
-    "category": "ממתקים",
-    "ingredients": "מוצקי קקאו 70%, חמאת קקאו, סוכר, וניל",
-    "description": "שוקולד מריר פרמיום עשיר בקקאו"
+    "sku": "STR-006",
+    "name": "פרילי",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "משקה יוגורט לשתייה"
   },
   {
-    "sku": "ALT-002",
-    "name": "שוקולד חלב אגוזים",
-    "category": "ממתקים",
-    "ingredients": "סוכר, חלב מלא, חמאת קקאו, מוצקי קקאו, אגוזי לוז 15%",
-    "description": "שוקולד חלב קרמי עם שלמות אגוזי לוז"
+    "sku": "STR-007",
+    "name": "שמנת מתוקה שטראוס",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "שמנת מתוקה להקצפה"
   },
   {
-    "sku": "SHK-001",
-    "name": "סוכריות פירות",
-    "category": "ממתקים",
-    "ingredients": "סוכר, גלוקוז, חומצת לימון, צבעי מאכל טבעיים, תמציות פירות",
-    "description": "סוכריות צבעוניות בטעמי פירות שונים"
+    "sku": "STR-008",
+    "name": "חלב סויה שטראוס",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "משקה סויה"
   },
   {
-    "sku": "CHL-001",
-    "name": "חלבה שומשום קלאסית",
-    "category": "ממתקים",
-    "ingredients": "שומשום טחון 60%, סוכר, וניל",
-    "description": "חלבה ישראלית מסורתית משומשום טחון"
+    "sku": "ELT-001",
+    "name": "שוקולד פרה חלב",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "טבלת שוקולד חלב"
   },
   {
-    "sku": "SHK-002",
-    "name": "גומיות פירות יער",
-    "category": "ממתקים",
-    "ingredients": "גלוקוז, סוכר, ג'לטין, מיץ פירות יער, חומצת לימון",
-    "description": "גומיות ג'לי רכות בטעם פירות יער"
+    "sku": "ELT-002",
+    "name": "כיף כף",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "חטיף וופל בציפוי שוקולד"
   },
   {
-    "sku": "ALT-003",
-    "name": "וופל שוקולד",
-    "category": "ממתקים",
-    "ingredients": "קמח, סוכר, שמן דקלים, קקאו, וניל, חלב מלא",
-    "description": "וופל פריך בציפוי שוקולד"
+    "sku": "ELT-003",
+    "name": "מקופלת",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "שוקולד ממולא"
   },
   {
-    "sku": "TBL-001",
-    "name": "טחינה גולמית",
-    "category": "תבלינים ורטבים",
-    "ingredients": "שומשום קלוי 100%",
-    "description": "טחינה גולמית 100% מזרעי שומשום קלויים"
+    "sku": "ELT-004",
+    "name": "פסק זמן",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "חטיף שוקולד וופל"
   },
   {
-    "sku": "TBL-002",
-    "name": "חריף ירוק ישראלי",
-    "category": "תבלינים ורטבים",
-    "ingredients": "פלפל ירוק חריף 60%, שום, כוסברה, שמן, מלח",
-    "description": "רוטב חריף ירוק בסגנון ישראלי"
+    "sku": "ELT-005",
+    "name": "קליק",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "חטיף שוקולד עם מילוי"
   },
   {
-    "sku": "ZIT-001",
-    "name": "שמן זית כתית מובחר",
-    "category": "תבלינים ורטבים",
-    "ingredients": "שמן זית כתית 100%",
-    "description": "שמן זית כתית מובחר מכרמי הגליל"
+    "sku": "ELT-006",
+    "name": "טורטית",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "חטיף וופל"
   },
   {
-    "sku": "HMZ-001",
-    "name": "חומוס מוכן",
-    "category": "תבלינים ורטבים",
-    "ingredients": "חומוס 50%, טחינה, שמן זית, לימון, שום, מלח",
-    "description": "חומוס מוכן לאכילה בסגנון ירושלמי"
+    "sku": "ELT-007",
+    "name": "קפה נמס עלית",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "קפה נמס"
   },
   {
-    "sku": "TBL-003",
-    "name": "זעתר ישראלי",
-    "category": "תבלינים ורטבים",
-    "ingredients": "זעתר 40%, סומאק, שומשום, מלח, שמן זית",
-    "description": "תערובת זעתר מסורתית לטבילה ותיבול"
+    "sku": "ELT-008",
+    "name": "שוקו עלית",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "אבקת שוקו"
   },
   {
-    "sku": "GLI-001",
-    "name": "גלידת וניל",
-    "category": "ממתקים",
-    "ingredients": "חלב, שמנת, סוכר, חלמון ביצה, תמצית וניל טבעית",
-    "description": "גלידת וניל שמנת עשירה על בסיס חלב מלא"
+    "sku": "WIL-001",
+    "name": "גבינת מוצרלה ויליפוד",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "גבינת מוצרלה"
   },
   {
-    "sku": "DGN-100",
-    "name": "פילה סלמון קפוא",
-    "category": "דגים ופירות ים",
-    "ingredients": "פילה סלמון אטלנטי 100%",
-    "description": "פילה סלמון נקי מעצמות, קפוא בהקפאה מהירה לשמירת טריות"
+    "sku": "WIL-002",
+    "name": "חלב קוקוס",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "משקה קוקוס בפחית"
   },
   {
-    "sku": "SHK-050",
-    "name": "שוקולד מריר 70%",
-    "category": "ממתקים",
-    "ingredients": "מוצקי קקאו 70%, סוכר, חמאת קקאו, לציטין מסויה",
-    "description": "טבלת שוקולד מריר עשיר באחוז מוצקי קקאו גבוה"
+    "sku": "WIL-003",
+    "name": "טונה במים",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "נתחי טונה במים"
+  },
+  {
+    "sku": "WIL-004",
+    "name": "תירס משומר",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "גרגירי תירס מתוק"
+  },
+  {
+    "sku": "WIL-005",
+    "name": "זיתים ירוקים ממולאים",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "זיתים ממולאי פלפל"
+  },
+  {
+    "sku": "WIL-006",
+    "name": "חומוס בקופסה",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "חומוס מוכן"
+  },
+  {
+    "sku": "WIL-007",
+    "name": "קרקרי אורז",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "פריכיות אורז"
+  },
+  {
+    "sku": "WIL-008",
+    "name": "שמן זית כתית מעולה",
+    "category": "מזון",
+    "ingredients": null,
+    "description": "שמן זית"
+  },
+  {
+    "sku": "TEV-001",
+    "name": "אקמול 500",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "פרצטמול לשיכוך כאבים"
+  },
+  {
+    "sku": "TEV-002",
+    "name": "אופטלגין",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "דיפירון לכאב וחום"
+  },
+  {
+    "sku": "TEV-003",
+    "name": "אקמול צינון ושפעת",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "טיפול בתסמיני צינון"
+  },
+  {
+    "sku": "TEV-004",
+    "name": "אקמולי לילדים",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "פרצטמול סירופ לילדים"
+  },
+  {
+    "sku": "TEV-005",
+    "name": "ויטמין D טבע",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "תוסף ויטמין D"
+  },
+  {
+    "sku": "TEV-006",
+    "name": "אומפרזול טבע",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "לטיפול בצרבת"
+  },
+  {
+    "sku": "TEV-007",
+    "name": "סימבסטטין טבע",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "להורדת כולסטרול"
+  },
+  {
+    "sku": "TEV-008",
+    "name": "פלואוקסטין טבע",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "תרופת מרשם"
+  },
+  {
+    "sku": "DXL-001",
+    "name": "דקסמול",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "פרצטמול"
+  },
+  {
+    "sku": "DXL-002",
+    "name": "דקסמול קולד",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "צינון ושפעת"
+  },
+  {
+    "sku": "DXL-003",
+    "name": "דקסמול צינון לילדים",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "סירופ לילדים"
+  },
+  {
+    "sku": "DXL-004",
+    "name": "אומז",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "אומפרזול לצרבת"
+  },
+  {
+    "sku": "DXL-005",
+    "name": "פמוטידין דקסל",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "להפחתת חומצה"
+  },
+  {
+    "sku": "DXL-006",
+    "name": "לוזרטן דקסל",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "ליתר לחץ דם"
+  },
+  {
+    "sku": "DXL-007",
+    "name": "מטפורמין דקסל",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "לסוכרת"
+  },
+  {
+    "sku": "DXL-008",
+    "name": "ויטמין C דקסל",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "תוסף ויטמין C"
+  },
+  {
+    "sku": "RKH-001",
+    "name": "משחת אבץ רקח",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "משחת הגנה לעור"
+  },
+  {
+    "sku": "RKH-002",
+    "name": "וזלין רפואי",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "וזלין"
+  },
+  {
+    "sku": "RKH-003",
+    "name": "אלכוהול רפואי 70%",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "חיטוי"
+  },
+  {
+    "sku": "RKH-004",
+    "name": "מי חמצן 3%",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "חיטוי פצעים"
+  },
+  {
+    "sku": "RKH-005",
+    "name": "משחת קלמין",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "להרגעת גירודים"
+  },
+  {
+    "sku": "RKH-006",
+    "name": "טיפות אף מלח",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "תמיסת מלח לאף"
+  },
+  {
+    "sku": "RKH-007",
+    "name": "סירופ שיעול רקח",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "להקלת שיעול"
+  },
+  {
+    "sku": "RKH-008",
+    "name": "כדורי מציצה לגרון",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "להקלת כאב גרון"
+  },
+  {
+    "sku": "PRG-001",
+    "name": "קרם לחות פריגו",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "קרם לחות לעור"
+  },
+  {
+    "sku": "PRG-002",
+    "name": "שמפו נגד קשקשים",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "שמפו רפואי"
+  },
+  {
+    "sku": "PRG-003",
+    "name": "קרם הגנה SPF50",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "הגנה מהשמש"
+  },
+  {
+    "sku": "PRG-004",
+    "name": "ג'ל אלוורה",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "ג'ל מרגיע לעור"
+  },
+  {
+    "sku": "PRG-005",
+    "name": "סירופ שיעול פריגו",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "להקלת שיעול"
+  },
+  {
+    "sku": "PRG-006",
+    "name": "טבליות אבץ",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "תוסף אבץ"
+  },
+  {
+    "sku": "PRG-007",
+    "name": "ויטמין B12",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "תוסף B12"
+  },
+  {
+    "sku": "PRG-008",
+    "name": "טיפות עיניים לחות",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "לחות לעיניים"
+  },
+  {
+    "sku": "GNC-001",
+    "name": "אבקת חלבון Whey",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "תוסף חלבון"
+  },
+  {
+    "sku": "GNC-002",
+    "name": "קריאטין מונוהידרט",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "תוסף לספורטאים"
+  },
+  {
+    "sku": "GNC-003",
+    "name": "מולטי ויטמין לגבר",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "מולטי ויטמין"
+  },
+  {
+    "sku": "GNC-004",
+    "name": "אומגה 3",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "שמן דגים"
+  },
+  {
+    "sku": "GNC-005",
+    "name": "מגנזיום",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "תוסף מגנזיום"
+  },
+  {
+    "sku": "GNC-006",
+    "name": "ויטמין C 1000",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "תוסף ויטמין C"
+  },
+  {
+    "sku": "GNC-007",
+    "name": "חומצות אמינו BCAA",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "תוסף לשרירים"
+  },
+  {
+    "sku": "GNC-008",
+    "name": "פרוביוטיקה",
+    "category": "תרופות",
+    "ingredients": null,
+    "description": "חיידקים פרוביוטיים"
+  },
+  {
+    "sku": "BTL-001",
+    "name": "ספה תלת מושבית",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "ספה לסלון"
+  },
+  {
+    "sku": "BTL-002",
+    "name": "פינת אוכל ו-6 כיסאות",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "שולחן וכיסאות"
+  },
+  {
+    "sku": "BTL-003",
+    "name": "שולחן סלון",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "שולחן קפה"
+  },
+  {
+    "sku": "BTL-004",
+    "name": "ארון הזזה 4 דלתות",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "ארון בגדים"
+  },
+  {
+    "sku": "BTL-005",
+    "name": "מיטה זוגית מרופדת",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "מיטה זוגית"
+  },
+  {
+    "sku": "BTL-006",
+    "name": "כורסת טלוויזיה",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "כורסא"
+  },
+  {
+    "sku": "BTL-007",
+    "name": "ספריית קיר",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "יחידת ספרייה"
+  },
+  {
+    "sku": "BTL-008",
+    "name": "שידת מגירות",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "שידה"
+  },
+  {
+    "sku": "AMN-001",
+    "name": "מזרן אורתופדי זוגי",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "מזרן קפיצים"
+  },
+  {
+    "sku": "AMN-002",
+    "name": "מזרן קפיצים מבודדים",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "מזרן פוקט"
+  },
+  {
+    "sku": "AMN-003",
+    "name": "מיטה מתכווננת חשמלית",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "מיטת בריאות"
+  },
+  {
+    "sku": "AMN-004",
+    "name": "בסיס מיטה מתפרק",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "בסיס מיטה"
+  },
+  {
+    "sku": "AMN-005",
+    "name": "כרית ויסקו",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "כרית זיכרון"
+  },
+  {
+    "sku": "AMN-006",
+    "name": "מזרן ילדים",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "מזרן יחיד לילדים"
+  },
+  {
+    "sku": "AMN-007",
+    "name": "מזרן לטקס זוגי",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "מזרן לטקס"
+  },
+  {
+    "sku": "AMN-008",
+    "name": "טופר ויסקו",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "מזרונית עליונה"
+  },
+  {
+    "sku": "DRG-001",
+    "name": "כיסא אורתופדי ארגונומי",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "כיסא תמיכה לגב"
+  },
+  {
+    "sku": "DRG-002",
+    "name": "כיסא מנהלים",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "כיסא משרדי מרופד"
+  },
+  {
+    "sku": "DRG-003",
+    "name": "מזרן בריאות הגב",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "מזרן אורתופדי"
+  },
+  {
+    "sku": "DRG-004",
+    "name": "כרית תמיכה לגב תחתון",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "כרית ישיבה"
+  },
+  {
+    "sku": "DRG-005",
+    "name": "כיסא גיימינג",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "כיסא גיימרים"
+  },
+  {
+    "sku": "DRG-006",
+    "name": "שרפרף ארגונומי",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "שרפרף ישיבה"
+  },
+  {
+    "sku": "DRG-007",
+    "name": "כיסא משרדי רשת",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "כיסא מאוורר"
+  },
+  {
+    "sku": "DRG-008",
+    "name": "מזרן אורתופדי מתקדם",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "מזרן תמיכה"
+  },
+  {
+    "sku": "ZGA-001",
+    "name": "ספה פינתית מעור",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "ספת עור"
+  },
+  {
+    "sku": "ZGA-002",
+    "name": "מערכת ישיבה 3+2",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "מערכת סלון"
+  },
+  {
+    "sku": "ZGA-003",
+    "name": "ספה נפתחת למיטה",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "ספה מתקפלת"
+  },
+  {
+    "sku": "ZGA-004",
+    "name": "כורסת ריקליינר",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "כורסא נפתחת"
+  },
+  {
+    "sku": "ZGA-005",
+    "name": "הדום אחסון",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "הדום"
+  },
+  {
+    "sku": "ZGA-006",
+    "name": "ספת עור איטלקי",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "ספה מעור אמיתי"
+  },
+  {
+    "sku": "ZGA-007",
+    "name": "מזנון סלוני",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "מזנון"
+  },
+  {
+    "sku": "ZGA-008",
+    "name": "כורסא מסתובבת",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "כורסא"
+  },
+  {
+    "sku": "KTR-001",
+    "name": "ארגז אחסון 100 ליטר",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "ארגז פלסטיק"
+  },
+  {
+    "sku": "KTR-002",
+    "name": "שולחן פלסטיק מתקפל",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "שולחן נייד"
+  },
+  {
+    "sku": "KTR-003",
+    "name": "כיסא נוח לגינה",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "כיסא גינה"
+  },
+  {
+    "sku": "KTR-004",
+    "name": "מחסן גינה",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "מחסן חוץ"
+  },
+  {
+    "sku": "KTR-005",
+    "name": "ארון כלים",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "ארון אחסון"
+  },
+  {
+    "sku": "KTR-006",
+    "name": "עגלת גינה",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "עגלת עבודה"
+  },
+  {
+    "sku": "KTR-007",
+    "name": "כוורת אחסון",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "יחידת מגירות"
+  },
+  {
+    "sku": "KTR-008",
+    "name": "סט ריהוט גינה",
+    "category": "ריהוט",
+    "ingredients": null,
+    "description": "מערכת גינה"
+  },
+  {
+    "sku": "CST-001",
+    "name": "חולצת טי כותנה",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "חולצת כותנה"
+  },
+  {
+    "sku": "CST-002",
+    "name": "ג'ינס סקיני",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "מכנסי ג'ינס"
+  },
+  {
+    "sku": "CST-003",
+    "name": "שמלת מידי",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "שמלה"
+  },
+  {
+    "sku": "CST-004",
+    "name": "ז'קט דמוי עור",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "ז'קט"
+  },
+  {
+    "sku": "CST-005",
+    "name": "חצאית פליסה",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "חצאית"
+  },
+  {
+    "sku": "CST-006",
+    "name": "מכנסי בד מחויטים",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "מכנסיים"
+  },
+  {
+    "sku": "CST-007",
+    "name": "סוודר סריג",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "סוודר"
+  },
+  {
+    "sku": "CST-008",
+    "name": "מעיל חורף",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "מעיל"
+  },
+  {
+    "sku": "FOX-001",
+    "name": "טי שירט בייסיק",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "חולצת בסיס"
+  },
+  {
+    "sku": "FOX-002",
+    "name": "טופ קרופ",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "טופ"
+  },
+  {
+    "sku": "FOX-003",
+    "name": "לגינגס ספורט",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "טייץ ספורט"
+  },
+  {
+    "sku": "FOX-004",
+    "name": "מכנסיים קצרים",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "שורטס"
+  },
+  {
+    "sku": "FOX-005",
+    "name": "כובע מצחייה",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "כובע"
+  },
+  {
+    "sku": "FOX-006",
+    "name": "מארז גרביים",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "גרביים"
+  },
+  {
+    "sku": "FOX-007",
+    "name": "פיג'מה",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "בגד שינה"
+  },
+  {
+    "sku": "FOX-008",
+    "name": "תיק גב",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "תיק"
+  },
+  {
+    "sku": "HDS-001",
+    "name": "קפוצ'ון פוטר",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "קפוצ'ון"
+  },
+  {
+    "sku": "HDS-002",
+    "name": "מכנסי טרנינג",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "מכנסי פוטר"
+  },
+  {
+    "sku": "HDS-003",
+    "name": "סווטשירט",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "חולצת פוטר"
+  },
+  {
+    "sku": "HDS-004",
+    "name": "חולצת כותנה בייסיק",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "חולצת בסיס"
+  },
+  {
+    "sku": "HDS-005",
+    "name": "מכנס קצר פוטר",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "שורטס"
+  },
+  {
+    "sku": "HDS-006",
+    "name": "גופיית ריב",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "גופייה"
+  },
+  {
+    "sku": "HDS-007",
+    "name": "מארז הלבשה תחתונה",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "תחתונים"
+  },
+  {
+    "sku": "HDS-008",
+    "name": "גרבי כותנה",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "גרביים"
+  },
+  {
+    "sku": "URB-001",
+    "name": "שמלת ערב",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "שמלה אלגנטית"
+  },
+  {
+    "sku": "URB-002",
+    "name": "חולצה מכופתרת",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "חולצה"
+  },
+  {
+    "sku": "URB-003",
+    "name": "בלייזר מחויט",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "בלייזר"
+  },
+  {
+    "sku": "URB-004",
+    "name": "מכנסי בד רחבים",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "מכנסיים"
+  },
+  {
+    "sku": "URB-005",
+    "name": "סריג אוברסייז",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "סריג"
+  },
+  {
+    "sku": "URB-006",
+    "name": "אוברול",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "אוברול"
+  },
+  {
+    "sku": "URB-007",
+    "name": "חצאית מידי",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "חצאית"
+  },
+  {
+    "sku": "URB-008",
+    "name": "מעיל טרנץ'",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "מעיל"
+  },
+  {
+    "sku": "RNR-001",
+    "name": "חולצה אלגנטית",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "חולצה מחויטת"
+  },
+  {
+    "sku": "RNR-002",
+    "name": "שמלת מעטפת",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "שמלה"
+  },
+  {
+    "sku": "RNR-003",
+    "name": "מכנסיים מחויטים",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "מכנסיים"
+  },
+  {
+    "sku": "RNR-004",
+    "name": "ז'קט קלאסי",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "ז'קט"
+  },
+  {
+    "sku": "RNR-005",
+    "name": "טוניקה",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "טוניקה"
+  },
+  {
+    "sku": "RNR-006",
+    "name": "סריג צמר",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "סריג"
+  },
+  {
+    "sku": "RNR-007",
+    "name": "חצאית עיפרון",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "חצאית"
+  },
+  {
+    "sku": "RNR-008",
+    "name": "מעיל קלאסי",
+    "category": "ביגוד",
+    "ingredients": null,
+    "description": "מעיל"
+  },
+  {
+    "sku": "TDR-001",
+    "name": "מזגן עילי אינוורטר",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מזגן עילי"
+  },
+  {
+    "sku": "TDR-002",
+    "name": "מזגן מיני מרכזי",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מיזוג מרכזי"
+  },
+  {
+    "sku": "TDR-003",
+    "name": "מטהר אוויר",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מטהר אוויר"
+  },
+  {
+    "sku": "TDR-004",
+    "name": "מזגן נייד",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מזגן נייד"
+  },
+  {
+    "sku": "TDR-005",
+    "name": "מאוורר עמוד",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מאוורר"
+  },
+  {
+    "sku": "TDR-006",
+    "name": "מזגן עילי 1.5 כ״ס",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מזגן חדר"
+  },
+  {
+    "sku": "TDR-007",
+    "name": "מערכת מיזוג רב-אזורית",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מולטי מזגן"
+  },
+  {
+    "sku": "TDR-008",
+    "name": "מזגן חלון",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מזגן חלון"
+  },
+  {
+    "sku": "ELC-001",
+    "name": "מקרר 4 דלתות",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מקרר גדול"
+  },
+  {
+    "sku": "ELC-002",
+    "name": "מכונת כביסה 8 ק״ג",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מכונת כביסה"
+  },
+  {
+    "sku": "ELC-003",
+    "name": "מדיח כלים",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מדיח"
+  },
+  {
+    "sku": "ELC-004",
+    "name": "תנור בילט אין",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "תנור אפייה"
+  },
+  {
+    "sku": "ELC-005",
+    "name": "מייבש כביסה",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מייבש"
+  },
+  {
+    "sku": "ELC-006",
+    "name": "מזגן אלקטרה אינוורטר",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מזגן עילי"
+  },
+  {
+    "sku": "ELC-007",
+    "name": "מיקרוגל",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מיקרוגל"
+  },
+  {
+    "sku": "ELC-008",
+    "name": "מקפיא מגירות",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מקפיא"
+  },
+  {
+    "sku": "SMN-001",
+    "name": "מכונת כביסה iQ500",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מכונת כביסה"
+  },
+  {
+    "sku": "SMN-002",
+    "name": "תנור אפייה פירוליטי",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "תנור"
+  },
+  {
+    "sku": "SMN-003",
+    "name": "כיריים אינדוקציה",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "כיריים"
+  },
+  {
+    "sku": "SMN-004",
+    "name": "מדיח כלים סימנס",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מדיח"
+  },
+  {
+    "sku": "SMN-005",
+    "name": "מקרר משולב No Frost",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מקרר"
+  },
+  {
+    "sku": "SMN-006",
+    "name": "מייבש כביסה חום",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מייבש"
+  },
+  {
+    "sku": "SMN-007",
+    "name": "מיקרוגל משולב",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מיקרוגל"
+  },
+  {
+    "sku": "SMN-008",
+    "name": "קולט אדים",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "קולט אדים"
+  },
+  {
+    "sku": "TCL-001",
+    "name": "טלוויזיה QLED 55 אינץ'",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "טלוויזיה חכמה"
+  },
+  {
+    "sku": "TCL-002",
+    "name": "טלוויזיה 4K 65 אינץ'",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "טלוויזיה חכמה"
+  },
+  {
+    "sku": "TCL-003",
+    "name": "מקרן לייזר",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מקרן"
+  },
+  {
+    "sku": "TCL-004",
+    "name": "מזגן TCL אינוורטר",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מזגן עילי"
+  },
+  {
+    "sku": "TCL-005",
+    "name": "סאונדבר",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מקרן קול"
+  },
+  {
+    "sku": "TCL-006",
+    "name": "טלוויזיה Mini LED 75 אינץ'",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "טלוויזיה חכמה"
+  },
+  {
+    "sku": "TCL-007",
+    "name": "מקרר TCL",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מקרר"
+  },
+  {
+    "sku": "TCL-008",
+    "name": "מכונת כביסה TCL",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מכונת כביסה"
+  },
+  {
+    "sku": "TSH-001",
+    "name": "טלוויזיה 4K 50 אינץ'",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "טלוויזיה חכמה"
+  },
+  {
+    "sku": "TSH-002",
+    "name": "מיקרוגל טושיבה",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מיקרוגל"
+  },
+  {
+    "sku": "TSH-003",
+    "name": "מקרר משולב",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מקרר"
+  },
+  {
+    "sku": "TSH-004",
+    "name": "מכונת כביסה",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מכונת כביסה"
+  },
+  {
+    "sku": "TSH-005",
+    "name": "מזגן טושיבה",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "מזגן עילי"
+  },
+  {
+    "sku": "TSH-006",
+    "name": "מארז נורות LED",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "תאורה"
+  },
+  {
+    "sku": "TSH-007",
+    "name": "כונן קשיח חיצוני 2TB",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "אחסון"
+  },
+  {
+    "sku": "TSH-008",
+    "name": "מטען נייד",
+    "category": "חשמל",
+    "ingredients": null,
+    "description": "סוללת גיבוי"
   }
 ]
