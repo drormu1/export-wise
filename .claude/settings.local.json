@@ -1,7 +1,5 @@
 {
-  "additionalDirectories": [],
   "permissions": {
-    "defaultMode": "acceptEdits",
     "allow": [
       "Bash(pwd)",
       "Bash(ls *)",
@@ -14,7 +12,23 @@
       "Bash(npm run *)",
       "Bash(npm test*)",
       "Bash(npm install*)",
-      "Bash(node *)"
+      "Bash(node *)",
+      "Bash(npm --version)",
+      "Bash(npm install *)",
+      "Bash(node -e \"const D=require\\('better-sqlite3'\\); const db=new D\\(':memory:'\\); console.log\\('better-sqlite3 OK, SELECT 1 =>', db.prepare\\('SELECT 1 AS x'\\).get\\(\\).x\\); db.close\\(\\);\")",
+      "Bash(node -e \"const p=require\\('./package.json'\\); console.log\\(JSON.stringify\\({deps:p.dependencies,dev:p.devDependencies},null,2\\)\\)\")",
+      "Bash(node -e \"const D=require\\('better-sqlite3'\\); const db=new D\\(':memory:'\\); console.log\\('better-sqlite3 OK =>', db.prepare\\('SELECT 1 AS x'\\).get\\(\\).x\\); db.close\\(\\);\")",
+      "Bash(node -e \"const p=require\\('./mock-jsons/products.json'\\); console.log\\('count',p.length\\); console.log\\('skus tail:', p.slice\\(-5\\).map\\(x=>x.sku\\).join\\(', '\\)\\); console.log\\('categories:', [...new Set\\(p.map\\(x=>x.category\\)\\)].join\\(' | '\\)\\);\")",
+      "Bash(node -e \"const d=require\\('./mock-jsons/decisions.json'\\); const max=k=>Math.max\\(...d.map\\(x=>x[k]\\)\\); console.log\\('max idx -> country',max\\('countryId'\\),'product',max\\('productId'\\),'mfr',max\\('manufacturerId'\\)\\); console.log\\('status dist:', JSON.stringify\\(d.reduce\\(\\(a,x\\)=>{a[x.decisionStatus]=\\(a[x.decisionStatus]||0\\)+1;return a},{}\\)\\)\\)\")",
+      "Bash(node -e \"const p=require\\('./mock-jsons/products.json'\\); console.log\\(JSON.stringify\\(p.slice\\(-2\\),null,2\\)\\); const s=new Set\\(p.map\\(x=>x.sku\\)\\); console.log\\('has DGN-100?',s.has\\('DGN-100'\\),'MSK-200?',s.has\\('MSK-200'\\),'MTK-300?',s.has\\('MTK-300'\\)\\);\")",
+      "Bash(node -e \"const p=require\\('./mock-jsons/products.json'\\); console.log\\('products:',p.length,'unique skus:',new Set\\(p.map\\(x=>x.sku\\)\\).size\\)\")",
+      "Bash(echo \"=== references to 'src/api' or 'src\\\\\\\\api' in tracked files \\(excl node_modules\\) ===\")",
+      "Bash(grep -rn \"src[/\\\\\\\\]api\\\\|src[/\\\\\\\\]client\\\\|\\\\bsrc/\\\\b\" --include=\"*.md\" --include=\"*.json\" --include=\"*.yml\" --include=\"*.yaml\" --include=\"*.ts\" -l .)",
+      "Bash(grep -rn \"src[/\\\\\\\\]api\\\\|src[/\\\\\\\\]client\\\\|src/main\\\\|src/seed\" --include=\"*.md\" --include=\"*.json\" .claude/settings.local.json my_tasks/api_nestjs_seed.md my_tasks/db_schema.md src/api/package.json src/api/database/init-db.ts)",
+      "Bash(npx ts-node *)",
+      "Bash(grep -rn \"src/api\\\\|src\\\\\\\\\\\\\\\\api\" --include=\"*.md\" --include=\"*.ts\" --include=\"*.json\" .)",
+      "Bash(grep -v \"^$\")",
+      "Bash(grep -vE \"^\\\\s*$|LOG|Nest application\")"
     ],
     "deny": [
       "Read(./.env)",
@@ -27,7 +41,8 @@
       "Read(~/.gnupg/**)",
       "Read(~/.config/gcloud/**)",
       "Edit(~/**)"
-    ]
+    ],
+    "defaultMode": "acceptEdits"
   },
   "sandbox": {
     "enabled": true,
@@ -40,5 +55,6 @@
         "."
       ]
     }
-  }
+  },
+  "additionalDirectories": []
 }

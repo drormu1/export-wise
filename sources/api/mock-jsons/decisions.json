@@ -1,0 +1,2002 @@
+[
+  {
+    "countryId": 13,
+    "productId": 34,
+    "manufacturerId": 48,
+    "decisionStatus": "אושר",
+    "decisionReason": "אושר לאחר בחינת הרכב המוצר ומסמכי ייצור. עומד בדרישות הבריאות",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2021-12-10"
+  },
+  {
+    "countryId": 28,
+    "productId": 33,
+    "manufacturerId": 28,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "המוצר עומד ברוב הדרישות אך נדרשים תנאים נוספים לאישור מלא",
+    "conditions": "יש לשמור על טמפרטורת קירור של 2-4 מעלות לאורך כל הדרך",
+    "risks": "יש לוודא עמידה בגבולות חומרי השימור הנדרשים לפי תקן המדינה",
+    "decisionDate": "2020-04-08"
+  },
+  {
+    "countryId": 37,
+    "productId": 35,
+    "manufacturerId": 14,
+    "decisionStatus": "נדחה",
+    "decisionReason": "לא עמד בתקנות התיוג המקומיות הנדרשות לייבוא",
+    "conditions": null,
+    "risks": "יש לוודא עמידה בגבולות חומרי השימור הנדרשים לפי תקן המדינה",
+    "decisionDate": "2024-04-01"
+  },
+  {
+    "countryId": 14,
+    "productId": 4,
+    "manufacturerId": 2,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "אושר בתנאי עמידה בדרישות התיוג המקומיות",
+    "conditions": "נדרש ביטוח משלוח מזון בינלאומי לכל עסקה",
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2022-02-17"
+  },
+  {
+    "countryId": 13,
+    "productId": 34,
+    "manufacturerId": 8,
+    "decisionStatus": "נדחה",
+    "decisionReason": "נמצאו חריגות בבדיקות מעבדה מינימום הדרישות המיקרוביולוגיות",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2024-10-16"
+  },
+  {
+    "countryId": 26,
+    "productId": 12,
+    "manufacturerId": 6,
+    "decisionStatus": "נדחה",
+    "decisionReason": "המוצר אינו עומד בתקנות הפסטוריזציה של המדינה המיובאת",
+    "conditions": null,
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2020-11-14"
+  },
+  {
+    "countryId": 26,
+    "productId": 29,
+    "manufacturerId": 46,
+    "decisionStatus": "אושר",
+    "decisionReason": "נבדק ואושר על ידי הרשות לבטיחות מזון. כל הרכיבים מותרים לשיווק",
+    "conditions": null,
+    "risks": "יש לוודא עמידה בגבולות חומרי השימור הנדרשים לפי תקן המדינה",
+    "decisionDate": "2020-11-21"
+  },
+  {
+    "countryId": 25,
+    "productId": 46,
+    "manufacturerId": 21,
+    "decisionStatus": "אושר",
+    "decisionReason": "עמידה בתקנות האיחוד האירופי לבטיחות מזון. תוויות מאושרות",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2020-04-07"
+  },
+  {
+    "countryId": 8,
+    "productId": 27,
+    "manufacturerId": 11,
+    "decisionStatus": "אושר",
+    "decisionReason": "נבדק ואושר על ידי הרשות לבטיחות מזון. כל הרכיבים מותרים לשיווק",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2022-08-08"
+  },
+  {
+    "countryId": 35,
+    "productId": 6,
+    "manufacturerId": 3,
+    "decisionStatus": "אושר",
+    "decisionReason": "עמידה בתקנות האיחוד האירופי לבטיחות מזון. תוויות מאושרות",
+    "conditions": null,
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2024-01-03"
+  },
+  {
+    "countryId": 26,
+    "productId": 31,
+    "manufacturerId": 30,
+    "decisionStatus": "נדחה",
+    "decisionReason": "הרכב המוצר כולל רכיב שאינו מאושר לשיווק במדינת היעד",
+    "conditions": null,
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2021-07-02"
+  },
+  {
+    "countryId": 0,
+    "productId": 24,
+    "manufacturerId": 16,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרשת הסמכת הלל תקינה לשוק הגולמי של המדינה",
+    "conditions": "כל משלוח חייב לעבור בדיקת מכס ובריאות בנמל הכניסה",
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2023-05-14"
+  },
+  {
+    "countryId": 12,
+    "productId": 18,
+    "manufacturerId": 13,
+    "decisionStatus": "נדחה",
+    "decisionReason": "המוצר מכיל חומרי שימור האסורים על פי חוקי המדינה המבקשת",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2020-10-24"
+  },
+  {
+    "countryId": 3,
+    "productId": 3,
+    "manufacturerId": 37,
+    "decisionStatus": "אושר",
+    "decisionReason": "מוצר דומה אושר בעבר לאותה מדינה. אין הגבלות ייבוא ידועות",
+    "conditions": null,
+    "risks": "יש לוודא עמידה בגבולות חומרי השימור הנדרשים לפי תקן המדינה",
+    "decisionDate": "2023-09-28"
+  },
+  {
+    "countryId": 32,
+    "productId": 5,
+    "manufacturerId": 11,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרשת הסמכת הלל תקינה לשוק הגולמי של המדינה",
+    "conditions": "חובה לעמוד בדרישות אריזה ייחודיות של המדינה המיובאת",
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2020-10-03"
+  },
+  {
+    "countryId": 7,
+    "productId": 36,
+    "manufacturerId": 15,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "אישור מותנה בעמידה בתקנות קירור ושרשרת הקור",
+    "conditions": "יש לצרף תעודת בריאות ווטרינרית בתוקף לכל משלוח",
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2024-10-02"
+  },
+  {
+    "countryId": 42,
+    "productId": 37,
+    "manufacturerId": 36,
+    "decisionStatus": "אושר",
+    "decisionReason": "עמידה בתקנות האיחוד האירופי לבטיחות מזון. תוויות מאושרות",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2024-06-09"
+  },
+  {
+    "countryId": 15,
+    "productId": 16,
+    "manufacturerId": 25,
+    "decisionStatus": "נדחה",
+    "decisionReason": "לא הוגשו אישורי הלל תקינה כנדרש לשוק המדינה",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2021-11-21"
+  },
+  {
+    "countryId": 20,
+    "productId": 4,
+    "manufacturerId": 0,
+    "decisionStatus": "אושר",
+    "decisionReason": "נבדק ואושר על ידי הרשות לבטיחות מזון. כל הרכיבים מותרים לשיווק",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2023-10-19"
+  },
+  {
+    "countryId": 34,
+    "productId": 13,
+    "manufacturerId": 32,
+    "decisionStatus": "אושר",
+    "decisionReason": "נבדק ואושר על ידי הרשות לבטיחות מזון. כל הרכיבים מותרים לשיווק",
+    "conditions": null,
+    "risks": "מוצר הדורש שרשרת קור עלול להיפגע בהובלה בינלאומית ארוכה",
+    "decisionDate": "2022-03-12"
+  },
+  {
+    "countryId": 23,
+    "productId": 18,
+    "manufacturerId": 10,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרש אישור ספציפי מהרשות הווטרינרית של המדינה המיובאת",
+    "conditions": "נדרשת תווית בשפה המקומית הכוללת את כל הרכיבים ותאריך תפוגה",
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2023-09-23"
+  },
+  {
+    "countryId": 42,
+    "productId": 6,
+    "manufacturerId": 8,
+    "decisionStatus": "אושר",
+    "decisionReason": "מוצר דומה אושר בעבר לאותה מדינה. אין הגבלות ייבוא ידועות",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2022-02-04"
+  },
+  {
+    "countryId": 18,
+    "productId": 38,
+    "manufacturerId": 13,
+    "decisionStatus": "אושר",
+    "decisionReason": "בדיקות מעבדה הוכיחו עמידה בכל הסטנדרטים הנדרשים",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2022-04-22"
+  },
+  {
+    "countryId": 16,
+    "productId": 3,
+    "manufacturerId": 5,
+    "decisionStatus": "נדחה",
+    "decisionReason": "המוצר מכיל חומרי שימור האסורים על פי חוקי המדינה המבקשת",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2023-05-02"
+  },
+  {
+    "countryId": 49,
+    "productId": 8,
+    "manufacturerId": 40,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "אושר בכפוף לבדיקה נוספת של חומרי השימור בתפוקה",
+    "conditions": "נדרשת הצהרת תכולת אלרגנים מפורטת על גבי האריזה",
+    "risks": "יש לוודא עמידה בגבולות חומרי השימור הנדרשים לפי תקן המדינה",
+    "decisionDate": "2022-03-24"
+  },
+  {
+    "countryId": 7,
+    "productId": 4,
+    "manufacturerId": 44,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרש אישור ספציפי מהרשות הווטרינרית של המדינה המיובאת",
+    "conditions": "נדרש אישור מעבדה עצמאי לכל אצווה לפני ייצוא",
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2021-09-02"
+  },
+  {
+    "countryId": 8,
+    "productId": 2,
+    "manufacturerId": 19,
+    "decisionStatus": "אושר",
+    "decisionReason": "עמידה בתקנות האיחוד האירופי לבטיחות מזון. תוויות מאושרות",
+    "conditions": null,
+    "risks": "מוצר הדורש שרשרת קור עלול להיפגע בהובלה בינלאומית ארוכה",
+    "decisionDate": "2022-01-12"
+  },
+  {
+    "countryId": 42,
+    "productId": 6,
+    "manufacturerId": 22,
+    "decisionStatus": "נדחה",
+    "decisionReason": "הרכב המוצר כולל רכיב שאינו מאושר לשיווק במדינת היעד",
+    "conditions": null,
+    "risks": "מוצר הדורש שרשרת קור עלול להיפגע בהובלה בינלאומית ארוכה",
+    "decisionDate": "2024-07-20"
+  },
+  {
+    "countryId": 10,
+    "productId": 11,
+    "manufacturerId": 26,
+    "decisionStatus": "אושר",
+    "decisionReason": "המוצר אינו מכיל חומרים אסורים על פי חוקי הייבוא של המדינה המבקשת",
+    "conditions": null,
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2020-03-24"
+  },
+  {
+    "countryId": 42,
+    "productId": 15,
+    "manufacturerId": 17,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "אושר בכפוף לבדיקה נוספת של חומרי השימור בתפוקה",
+    "conditions": "נדרשת תווית בשפה המקומית הכוללת את כל הרכיבים ותאריך תפוגה",
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2021-12-04"
+  },
+  {
+    "countryId": 14,
+    "productId": 12,
+    "manufacturerId": 29,
+    "decisionStatus": "אושר",
+    "decisionReason": "עמידה בתקנות האיחוד האירופי לבטיחות מזון. תוויות מאושרות",
+    "conditions": null,
+    "risks": "מוצר הדורש שרשרת קור עלול להיפגע בהובלה בינלאומית ארוכה",
+    "decisionDate": "2022-05-27"
+  },
+  {
+    "countryId": 1,
+    "productId": 42,
+    "manufacturerId": 12,
+    "decisionStatus": "נדחה",
+    "decisionReason": "לא עמד בתקנות התיוג המקומיות הנדרשות לייבוא",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2023-06-09"
+  },
+  {
+    "countryId": 22,
+    "productId": 41,
+    "manufacturerId": 32,
+    "decisionStatus": "אושר",
+    "decisionReason": "המוצר אינו מכיל חומרים אסורים על פי חוקי הייבוא של המדינה המבקשת",
+    "conditions": null,
+    "risks": "יש לוודא עמידה בגבולות חומרי השימור הנדרשים לפי תקן המדינה",
+    "decisionDate": "2023-11-27"
+  },
+  {
+    "countryId": 7,
+    "productId": 16,
+    "manufacturerId": 11,
+    "decisionStatus": "אושר",
+    "decisionReason": "נבדק ואושר על ידי הרשות לבטיחות מזון. כל הרכיבים מותרים לשיווק",
+    "conditions": null,
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2024-05-02"
+  },
+  {
+    "countryId": 22,
+    "productId": 46,
+    "manufacturerId": 20,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "המוצר עומד ברוב הדרישות אך נדרשים תנאים נוספים לאישור מלא",
+    "conditions": "נדרשת הצהרת תכולת אלרגנים מפורטת על גבי האריזה",
+    "risks": "מוצר הדורש שרשרת קור עלול להיפגע בהובלה בינלאומית ארוכה",
+    "decisionDate": "2023-10-17"
+  },
+  {
+    "countryId": 16,
+    "productId": 2,
+    "manufacturerId": 45,
+    "decisionStatus": "אושר",
+    "decisionReason": "עמידה בתקנות האיחוד האירופי לבטיחות מזון. תוויות מאושרות",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2023-01-17"
+  },
+  {
+    "countryId": 27,
+    "productId": 4,
+    "manufacturerId": 42,
+    "decisionStatus": "אושר",
+    "decisionReason": "נבדק ואושר על ידי הרשות לבטיחות מזון. כל הרכיבים מותרים לשיווק",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2022-10-11"
+  },
+  {
+    "countryId": 32,
+    "productId": 19,
+    "manufacturerId": 42,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרשת הסמכת הלל תקינה לשוק הגולמי של המדינה",
+    "conditions": "נדרש ביטוח משלוח מזון בינלאומי לכל עסקה",
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2023-06-13"
+  },
+  {
+    "countryId": 12,
+    "productId": 26,
+    "manufacturerId": 42,
+    "decisionStatus": "אושר",
+    "decisionReason": "מוצר דומה אושר בעבר לאותה מדינה. אין הגבלות ייבוא ידועות",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2023-11-24"
+  },
+  {
+    "countryId": 25,
+    "productId": 35,
+    "manufacturerId": 0,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "אושר בכפוף לבדיקה נוספת של חומרי השימור בתפוקה",
+    "conditions": "יש לשמור על טמפרטורת קירור של 2-4 מעלות לאורך כל הדרך",
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2022-05-07"
+  },
+  {
+    "countryId": 28,
+    "productId": 28,
+    "manufacturerId": 43,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרשת הסמכת הלל תקינה לשוק הגולמי של המדינה",
+    "conditions": "נדרש אישור מעבדה עצמאי לכל אצווה לפני ייצוא",
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2021-09-16"
+  },
+  {
+    "countryId": 18,
+    "productId": 32,
+    "manufacturerId": 42,
+    "decisionStatus": "אושר",
+    "decisionReason": "עמידה בתקנות האיחוד האירופי לבטיחות מזון. תוויות מאושרות",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2024-06-03"
+  },
+  {
+    "countryId": 14,
+    "productId": 12,
+    "manufacturerId": 9,
+    "decisionStatus": "אושר",
+    "decisionReason": "פיקוח וטרינרי עבר בהצלחה. מוצר מהחי תקני",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2020-01-08"
+  },
+  {
+    "countryId": 29,
+    "productId": 26,
+    "manufacturerId": 40,
+    "decisionStatus": "נדחה",
+    "decisionReason": "חסרים תעודות מוצא ומסמכי ייצור נדרשים",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2024-04-23"
+  },
+  {
+    "countryId": 25,
+    "productId": 15,
+    "manufacturerId": 9,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "אושר בכפוף לבדיקה נוספת של חומרי השימור בתפוקה",
+    "conditions": "חובה לעמוד בדרישות אריזה ייחודיות של המדינה המיובאת",
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2020-02-25"
+  },
+  {
+    "countryId": 44,
+    "productId": 33,
+    "manufacturerId": 29,
+    "decisionStatus": "אושר",
+    "decisionReason": "נבדק ואושר על ידי הרשות לבטיחות מזון. כל הרכיבים מותרים לשיווק",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2020-09-08"
+  },
+  {
+    "countryId": 8,
+    "productId": 29,
+    "manufacturerId": 42,
+    "decisionStatus": "נדחה",
+    "decisionReason": "המוצר אינו עומד בתקנות הפסטוריזציה של המדינה המיובאת",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2024-09-20"
+  },
+  {
+    "countryId": 39,
+    "productId": 46,
+    "manufacturerId": 32,
+    "decisionStatus": "נדחה",
+    "decisionReason": "הרכב המוצר כולל רכיב שאינו מאושר לשיווק במדינת היעד",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2023-09-15"
+  },
+  {
+    "countryId": 28,
+    "productId": 16,
+    "manufacturerId": 48,
+    "decisionStatus": "אושר",
+    "decisionReason": "פיקוח וטרינרי עבר בהצלחה. מוצר מהחי תקני",
+    "conditions": null,
+    "risks": "מוצר הדורש שרשרת קור עלול להיפגע בהובלה בינלאומית ארוכה",
+    "decisionDate": "2021-11-09"
+  },
+  {
+    "countryId": 17,
+    "productId": 28,
+    "manufacturerId": 4,
+    "decisionStatus": "נדחה",
+    "decisionReason": "המוצר אינו עומד בתקנות הפסטוריזציה של המדינה המיובאת",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2022-04-09"
+  },
+  {
+    "countryId": 34,
+    "productId": 5,
+    "manufacturerId": 8,
+    "decisionStatus": "נדחה",
+    "decisionReason": "הרכב המוצר כולל רכיב שאינו מאושר לשיווק במדינת היעד",
+    "conditions": null,
+    "risks": "מוצר הדורש שרשרת קור עלול להיפגע בהובלה בינלאומית ארוכה",
+    "decisionDate": "2021-04-13"
+  },
+  {
+    "countryId": 4,
+    "productId": 26,
+    "manufacturerId": 26,
+    "decisionStatus": "אושר",
+    "decisionReason": "אושר לאחר בחינת הרכב המוצר ומסמכי ייצור. עומד בדרישות הבריאות",
+    "conditions": null,
+    "risks": "יש לוודא עמידה בגבולות חומרי השימור הנדרשים לפי תקן המדינה",
+    "decisionDate": "2022-09-15"
+  },
+  {
+    "countryId": 13,
+    "productId": 26,
+    "manufacturerId": 24,
+    "decisionStatus": "נדחה",
+    "decisionReason": "חסרים תעודות מוצא ומסמכי ייצור נדרשים",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2024-12-01"
+  },
+  {
+    "countryId": 0,
+    "productId": 22,
+    "manufacturerId": 19,
+    "decisionStatus": "נדחה",
+    "decisionReason": "נמצאו חריגות בבדיקות מעבדה מינימום הדרישות המיקרוביולוגיות",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2023-07-18"
+  },
+  {
+    "countryId": 14,
+    "productId": 17,
+    "manufacturerId": 27,
+    "decisionStatus": "אושר",
+    "decisionReason": "המוצר אינו מכיל חומרים אסורים על פי חוקי הייבוא של המדינה המבקשת",
+    "conditions": null,
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2023-01-13"
+  },
+  {
+    "countryId": 46,
+    "productId": 10,
+    "manufacturerId": 29,
+    "decisionStatus": "אושר",
+    "decisionReason": "המוצר עומד בכל דרישות התקן המקומי ותקנות הייבוא",
+    "conditions": null,
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2021-10-18"
+  },
+  {
+    "countryId": 37,
+    "productId": 36,
+    "manufacturerId": 42,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "אושר בכפוף לבדיקה נוספת של חומרי השימור בתפוקה",
+    "conditions": "נדרש אישור מעבדה עצמאי לכל אצווה לפני ייצוא",
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2020-02-21"
+  },
+  {
+    "countryId": 11,
+    "productId": 3,
+    "manufacturerId": 16,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "אושר בכפוף לבדיקה נוספת של חומרי השימור בתפוקה",
+    "conditions": "יש לשמור על טמפרטורת קירור של 2-4 מעלות לאורך כל הדרך",
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2023-06-07"
+  },
+  {
+    "countryId": 48,
+    "productId": 24,
+    "manufacturerId": 17,
+    "decisionStatus": "אושר",
+    "decisionReason": "נבדק ואושר על ידי הרשות לבטיחות מזון. כל הרכיבים מותרים לשיווק",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2023-05-27"
+  },
+  {
+    "countryId": 1,
+    "productId": 34,
+    "manufacturerId": 3,
+    "decisionStatus": "אושר",
+    "decisionReason": "נבדק ואושר על ידי הרשות לבטיחות מזון. כל הרכיבים מותרים לשיווק",
+    "conditions": null,
+    "risks": "יש לוודא עמידה בגבולות חומרי השימור הנדרשים לפי תקן המדינה",
+    "decisionDate": "2022-04-21"
+  },
+  {
+    "countryId": 48,
+    "productId": 1,
+    "manufacturerId": 15,
+    "decisionStatus": "נדחה",
+    "decisionReason": "הרכב המוצר כולל רכיב שאינו מאושר לשיווק במדינת היעד",
+    "conditions": null,
+    "risks": "מוצר הדורש שרשרת קור עלול להיפגע בהובלה בינלאומית ארוכה",
+    "decisionDate": "2021-01-20"
+  },
+  {
+    "countryId": 8,
+    "productId": 30,
+    "manufacturerId": 42,
+    "decisionStatus": "אושר",
+    "decisionReason": "פיקוח וטרינרי עבר בהצלחה. מוצר מהחי תקני",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2020-10-07"
+  },
+  {
+    "countryId": 49,
+    "productId": 23,
+    "manufacturerId": 10,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרשת הסמכת הלל תקינה לשוק הגולמי של המדינה",
+    "conditions": "יש לצרף תעודת בריאות ווטרינרית בתוקף לכל משלוח",
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2024-10-24"
+  },
+  {
+    "countryId": 19,
+    "productId": 6,
+    "manufacturerId": 37,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרשת הסמכת הלל תקינה לשוק הגולמי של המדינה",
+    "conditions": "נדרשת הצהרת תכולת אלרגנים מפורטת על גבי האריזה",
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2020-05-19"
+  },
+  {
+    "countryId": 45,
+    "productId": 12,
+    "manufacturerId": 4,
+    "decisionStatus": "נדחה",
+    "decisionReason": "נמצאו חריגות בבדיקות מעבדה מינימום הדרישות המיקרוביולוגיות",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2024-12-27"
+  },
+  {
+    "countryId": 44,
+    "productId": 19,
+    "manufacturerId": 43,
+    "decisionStatus": "אושר",
+    "decisionReason": "המוצר עומד בכל דרישות התקן המקומי ותקנות הייבוא",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2024-02-26"
+  },
+  {
+    "countryId": 34,
+    "productId": 27,
+    "manufacturerId": 42,
+    "decisionStatus": "נדחה",
+    "decisionReason": "המוצר אינו עומד בתקנות הפסטוריזציה של המדינה המיובאת",
+    "conditions": null,
+    "risks": "יש לוודא עמידה בגבולות חומרי השימור הנדרשים לפי תקן המדינה",
+    "decisionDate": "2022-02-17"
+  },
+  {
+    "countryId": 26,
+    "productId": 31,
+    "manufacturerId": 6,
+    "decisionStatus": "אושר",
+    "decisionReason": "פיקוח וטרינרי עבר בהצלחה. מוצר מהחי תקני",
+    "conditions": null,
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2023-06-21"
+  },
+  {
+    "countryId": 27,
+    "productId": 11,
+    "manufacturerId": 46,
+    "decisionStatus": "אושר",
+    "decisionReason": "פיקוח וטרינרי עבר בהצלחה. מוצר מהחי תקני",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2024-11-09"
+  },
+  {
+    "countryId": 27,
+    "productId": 46,
+    "manufacturerId": 37,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "אושר בתנאי עמידה בדרישות התיוג המקומיות",
+    "conditions": "יש לצרף תעודת בריאות ווטרינרית בתוקף לכל משלוח",
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2022-06-28"
+  },
+  {
+    "countryId": 28,
+    "productId": 15,
+    "manufacturerId": 48,
+    "decisionStatus": "נדחה",
+    "decisionReason": "חסרים תעודות מוצא ומסמכי ייצור נדרשים",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2023-10-20"
+  },
+  {
+    "countryId": 1,
+    "productId": 31,
+    "manufacturerId": 20,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרש אישור ספציפי מהרשות הווטרינרית של המדינה המיובאת",
+    "conditions": "נדרש ביטוח משלוח מזון בינלאומי לכל עסקה",
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2021-08-07"
+  },
+  {
+    "countryId": 17,
+    "productId": 38,
+    "manufacturerId": 44,
+    "decisionStatus": "אושר",
+    "decisionReason": "עמידה בתקנות האיחוד האירופי לבטיחות מזון. תוויות מאושרות",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2022-09-01"
+  },
+  {
+    "countryId": 15,
+    "productId": 46,
+    "manufacturerId": 26,
+    "decisionStatus": "אושר",
+    "decisionReason": "עמידה בתקנות האיחוד האירופי לבטיחות מזון. תוויות מאושרות",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2023-09-25"
+  },
+  {
+    "countryId": 41,
+    "productId": 45,
+    "manufacturerId": 31,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרש אישור ספציפי מהרשות הווטרינרית של המדינה המיובאת",
+    "conditions": "חובה לעמוד בדרישות אריזה ייחודיות של המדינה המיובאת",
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2023-01-03"
+  },
+  {
+    "countryId": 44,
+    "productId": 15,
+    "manufacturerId": 19,
+    "decisionStatus": "אושר",
+    "decisionReason": "המוצר אינו מכיל חומרים אסורים על פי חוקי הייבוא של המדינה המבקשת",
+    "conditions": null,
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2024-06-16"
+  },
+  {
+    "countryId": 47,
+    "productId": 35,
+    "manufacturerId": 21,
+    "decisionStatus": "נדחה",
+    "decisionReason": "לא הוגשו אישורי הלל תקינה כנדרש לשוק המדינה",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2022-12-15"
+  },
+  {
+    "countryId": 16,
+    "productId": 14,
+    "manufacturerId": 7,
+    "decisionStatus": "אושר",
+    "decisionReason": "מוצר דומה אושר בעבר לאותה מדינה. אין הגבלות ייבוא ידועות",
+    "conditions": null,
+    "risks": "מוצר הדורש שרשרת קור עלול להיפגע בהובלה בינלאומית ארוכה",
+    "decisionDate": "2021-06-04"
+  },
+  {
+    "countryId": 13,
+    "productId": 30,
+    "manufacturerId": 17,
+    "decisionStatus": "אושר",
+    "decisionReason": "בדיקות מעבדה הוכיחו עמידה בכל הסטנדרטים הנדרשים",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2024-09-20"
+  },
+  {
+    "countryId": 12,
+    "productId": 18,
+    "manufacturerId": 14,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "המוצר עומד ברוב הדרישות אך נדרשים תנאים נוספים לאישור מלא",
+    "conditions": "נדרש אישור מעבדה עצמאי לכל אצווה לפני ייצוא",
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2022-03-10"
+  },
+  {
+    "countryId": 2,
+    "productId": 3,
+    "manufacturerId": 35,
+    "decisionStatus": "אושר",
+    "decisionReason": "פיקוח וטרינרי עבר בהצלחה. מוצר מהחי תקני",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2022-12-05"
+  },
+  {
+    "countryId": 0,
+    "productId": 36,
+    "manufacturerId": 18,
+    "decisionStatus": "נדחה",
+    "decisionReason": "המוצר אינו עומד בתקנות הפסטוריזציה של המדינה המיובאת",
+    "conditions": null,
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2023-08-15"
+  },
+  {
+    "countryId": 3,
+    "productId": 16,
+    "manufacturerId": 30,
+    "decisionStatus": "נדחה",
+    "decisionReason": "בעיות בשרשרת הקור הגורמות לחשש ממיקרוביולוגי",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2020-02-13"
+  },
+  {
+    "countryId": 36,
+    "productId": 40,
+    "manufacturerId": 43,
+    "decisionStatus": "נדחה",
+    "decisionReason": "לא הוגשו אישורי הלל תקינה כנדרש לשוק המדינה",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2020-03-05"
+  },
+  {
+    "countryId": 15,
+    "productId": 7,
+    "manufacturerId": 35,
+    "decisionStatus": "נדחה",
+    "decisionReason": "נמצאו חריגות בבדיקות מעבדה מינימום הדרישות המיקרוביולוגיות",
+    "conditions": null,
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2023-10-20"
+  },
+  {
+    "countryId": 28,
+    "productId": 28,
+    "manufacturerId": 19,
+    "decisionStatus": "אושר",
+    "decisionReason": "המוצר עומד בכל דרישות התקן המקומי ותקנות הייבוא",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2024-07-10"
+  },
+  {
+    "countryId": 48,
+    "productId": 13,
+    "manufacturerId": 40,
+    "decisionStatus": "אושר",
+    "decisionReason": "נבדק ואושר על ידי הרשות לבטיחות מזון. כל הרכיבים מותרים לשיווק",
+    "conditions": null,
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2021-05-22"
+  },
+  {
+    "countryId": 15,
+    "productId": 11,
+    "manufacturerId": 35,
+    "decisionStatus": "נדחה",
+    "decisionReason": "חסרים תעודות מוצא ומסמכי ייצור נדרשים",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2020-03-01"
+  },
+  {
+    "countryId": 44,
+    "productId": 38,
+    "manufacturerId": 30,
+    "decisionStatus": "נדחה",
+    "decisionReason": "לא הוגשו אישורי הלל תקינה כנדרש לשוק המדינה",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2022-01-08"
+  },
+  {
+    "countryId": 44,
+    "productId": 29,
+    "manufacturerId": 4,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרשת הסמכת הלל תקינה לשוק הגולמי של המדינה",
+    "conditions": "חובה לעמוד בדרישות אריזה ייחודיות של המדינה המיובאת",
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2021-05-26"
+  },
+  {
+    "countryId": 7,
+    "productId": 34,
+    "manufacturerId": 14,
+    "decisionStatus": "אושר",
+    "decisionReason": "מוצר דומה אושר בעבר לאותה מדינה. אין הגבלות ייבוא ידועות",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2021-05-27"
+  },
+  {
+    "countryId": 3,
+    "productId": 10,
+    "manufacturerId": 19,
+    "decisionStatus": "אושר",
+    "decisionReason": "בדיקות מעבדה הוכיחו עמידה בכל הסטנדרטים הנדרשים",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2024-12-27"
+  },
+  {
+    "countryId": 7,
+    "productId": 29,
+    "manufacturerId": 44,
+    "decisionStatus": "נדחה",
+    "decisionReason": "לא הוגשו אישורי הלל תקינה כנדרש לשוק המדינה",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2022-12-13"
+  },
+  {
+    "countryId": 28,
+    "productId": 5,
+    "manufacturerId": 38,
+    "decisionStatus": "נדחה",
+    "decisionReason": "המוצר אינו עומד בתקנות הפסטוריזציה של המדינה המיובאת",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2020-07-24"
+  },
+  {
+    "countryId": 1,
+    "productId": 5,
+    "manufacturerId": 14,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרשת הסמכת הלל תקינה לשוק הגולמי של המדינה",
+    "conditions": "נדרש ביטוח משלוח מזון בינלאומי לכל עסקה",
+    "risks": "יש לוודא עמידה בגבולות חומרי השימור הנדרשים לפי תקן המדינה",
+    "decisionDate": "2024-10-01"
+  },
+  {
+    "countryId": 48,
+    "productId": 11,
+    "manufacturerId": 30,
+    "decisionStatus": "אושר",
+    "decisionReason": "בדיקות מעבדה הוכיחו עמידה בכל הסטנדרטים הנדרשים",
+    "conditions": null,
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2024-11-15"
+  },
+  {
+    "countryId": 37,
+    "productId": 27,
+    "manufacturerId": 40,
+    "decisionStatus": "אושר",
+    "decisionReason": "המוצר אינו מכיל חומרים אסורים על פי חוקי הייבוא של המדינה המבקשת",
+    "conditions": null,
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2023-02-16"
+  },
+  {
+    "countryId": 21,
+    "productId": 20,
+    "manufacturerId": 42,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "אושר בכפוף לבדיקה נוספת של חומרי השימור בתפוקה",
+    "conditions": "כל משלוח חייב לעבור בדיקת מכס ובריאות בנמל הכניסה",
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2020-03-11"
+  },
+  {
+    "countryId": 42,
+    "productId": 25,
+    "manufacturerId": 48,
+    "decisionStatus": "נדחה",
+    "decisionReason": "לא עמד בתקנות התיוג המקומיות הנדרשות לייבוא",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2024-01-15"
+  },
+  {
+    "countryId": 16,
+    "productId": 20,
+    "manufacturerId": 7,
+    "decisionStatus": "אושר",
+    "decisionReason": "המוצר עומד בכל דרישות התקן המקומי ותקנות הייבוא",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2023-09-27"
+  },
+  {
+    "countryId": 26,
+    "productId": 3,
+    "manufacturerId": 12,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "אושר בכפוף לבדיקה נוספת של חומרי השימור בתפוקה",
+    "conditions": "כל משלוח חייב לעבור בדיקת מכס ובריאות בנמל הכניסה",
+    "risks": "יש לוודא עמידה בגבולות חומרי השימור הנדרשים לפי תקן המדינה",
+    "decisionDate": "2024-06-20"
+  },
+  {
+    "countryId": 13,
+    "productId": 17,
+    "manufacturerId": 35,
+    "decisionStatus": "אושר",
+    "decisionReason": "פיקוח וטרינרי עבר בהצלחה. מוצר מהחי תקני",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2021-05-15"
+  },
+  {
+    "countryId": 1,
+    "productId": 40,
+    "manufacturerId": 38,
+    "decisionStatus": "אושר",
+    "decisionReason": "בדיקות מעבדה הוכיחו עמידה בכל הסטנדרטים הנדרשים",
+    "conditions": null,
+    "risks": "יש לוודא עמידה בגבולות חומרי השימור הנדרשים לפי תקן המדינה",
+    "decisionDate": "2021-12-06"
+  },
+  {
+    "countryId": 35,
+    "productId": 26,
+    "manufacturerId": 5,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "המוצר עומד ברוב הדרישות אך נדרשים תנאים נוספים לאישור מלא",
+    "conditions": "נדרש אישור מעבדה עצמאי לכל אצווה לפני ייצוא",
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2021-02-15"
+  },
+  {
+    "countryId": 45,
+    "productId": 18,
+    "manufacturerId": 32,
+    "decisionStatus": "אושר",
+    "decisionReason": "פיקוח וטרינרי עבר בהצלחה. מוצר מהחי תקני",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2022-07-27"
+  },
+  {
+    "countryId": 15,
+    "productId": 29,
+    "manufacturerId": 35,
+    "decisionStatus": "אושר",
+    "decisionReason": "מוצר דומה אושר בעבר לאותה מדינה. אין הגבלות ייבוא ידועות",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2021-07-07"
+  },
+  {
+    "countryId": 17,
+    "productId": 26,
+    "manufacturerId": 21,
+    "decisionStatus": "נדחה",
+    "decisionReason": "המוצר מכיל חומרי שימור האסורים על פי חוקי המדינה המבקשת",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2024-05-27"
+  },
+  {
+    "countryId": 46,
+    "productId": 19,
+    "manufacturerId": 37,
+    "decisionStatus": "נדחה",
+    "decisionReason": "הרכב המוצר כולל רכיב שאינו מאושר לשיווק במדינת היעד",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2024-11-16"
+  },
+  {
+    "countryId": 34,
+    "productId": 30,
+    "manufacturerId": 22,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "אישור מותנה בעמידה בתקנות קירור ושרשרת הקור",
+    "conditions": "נדרשת הצהרת תכולת אלרגנים מפורטת על גבי האריזה",
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2022-09-25"
+  },
+  {
+    "countryId": 20,
+    "productId": 12,
+    "manufacturerId": 44,
+    "decisionStatus": "נדחה",
+    "decisionReason": "נמצאו חריגות בבדיקות מעבדה מינימום הדרישות המיקרוביולוגיות",
+    "conditions": null,
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2021-10-13"
+  },
+  {
+    "countryId": 2,
+    "productId": 20,
+    "manufacturerId": 47,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "אושר בכפוף לבדיקה נוספת של חומרי השימור בתפוקה",
+    "conditions": "נדרשת הצהרת תכולת אלרגנים מפורטת על גבי האריזה",
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2023-12-26"
+  },
+  {
+    "countryId": 31,
+    "productId": 2,
+    "manufacturerId": 8,
+    "decisionStatus": "נדחה",
+    "decisionReason": "לא עמד בתקנות התיוג המקומיות הנדרשות לייבוא",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2024-10-11"
+  },
+  {
+    "countryId": 6,
+    "productId": 33,
+    "manufacturerId": 29,
+    "decisionStatus": "אושר",
+    "decisionReason": "אושר לאחר בחינת הרכב המוצר ומסמכי ייצור. עומד בדרישות הבריאות",
+    "conditions": null,
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2020-12-05"
+  },
+  {
+    "countryId": 4,
+    "productId": 30,
+    "manufacturerId": 16,
+    "decisionStatus": "אושר",
+    "decisionReason": "אושר לאחר בחינת הרכב המוצר ומסמכי ייצור. עומד בדרישות הבריאות",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2022-10-23"
+  },
+  {
+    "countryId": 21,
+    "productId": 43,
+    "manufacturerId": 34,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרשת הסמכת הלל תקינה לשוק הגולמי של המדינה",
+    "conditions": "כל משלוח חייב לעבור בדיקת מכס ובריאות בנמל הכניסה",
+    "risks": "יש לוודא עמידה בגבולות חומרי השימור הנדרשים לפי תקן המדינה",
+    "decisionDate": "2023-06-21"
+  },
+  {
+    "countryId": 39,
+    "productId": 4,
+    "manufacturerId": 15,
+    "decisionStatus": "נדחה",
+    "decisionReason": "לא עמד בתקנות התיוג המקומיות הנדרשות לייבוא",
+    "conditions": null,
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2022-04-24"
+  },
+  {
+    "countryId": 6,
+    "productId": 40,
+    "manufacturerId": 45,
+    "decisionStatus": "נדחה",
+    "decisionReason": "לא הוגשו אישורי הלל תקינה כנדרש לשוק המדינה",
+    "conditions": null,
+    "risks": "יש לוודא עמידה בגבולות חומרי השימור הנדרשים לפי תקן המדינה",
+    "decisionDate": "2020-08-06"
+  },
+  {
+    "countryId": 2,
+    "productId": 20,
+    "manufacturerId": 3,
+    "decisionStatus": "נדחה",
+    "decisionReason": "חסרים תעודות מוצא ומסמכי ייצור נדרשים",
+    "conditions": null,
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2022-06-12"
+  },
+  {
+    "countryId": 15,
+    "productId": 33,
+    "manufacturerId": 26,
+    "decisionStatus": "נדחה",
+    "decisionReason": "הרכב המוצר כולל רכיב שאינו מאושר לשיווק במדינת היעד",
+    "conditions": null,
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2024-11-26"
+  },
+  {
+    "countryId": 11,
+    "productId": 5,
+    "manufacturerId": 39,
+    "decisionStatus": "אושר",
+    "decisionReason": "עמידה בתקנות האיחוד האירופי לבטיחות מזון. תוויות מאושרות",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2023-10-22"
+  },
+  {
+    "countryId": 37,
+    "productId": 9,
+    "manufacturerId": 14,
+    "decisionStatus": "אושר",
+    "decisionReason": "פיקוח וטרינרי עבר בהצלחה. מוצר מהחי תקני",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2023-11-09"
+  },
+  {
+    "countryId": 42,
+    "productId": 0,
+    "manufacturerId": 29,
+    "decisionStatus": "אושר",
+    "decisionReason": "מוצר דומה אושר בעבר לאותה מדינה. אין הגבלות ייבוא ידועות",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2022-11-18"
+  },
+  {
+    "countryId": 28,
+    "productId": 22,
+    "manufacturerId": 37,
+    "decisionStatus": "אושר",
+    "decisionReason": "בדיקות מעבדה הוכיחו עמידה בכל הסטנדרטים הנדרשים",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2022-11-14"
+  },
+  {
+    "countryId": 19,
+    "productId": 12,
+    "manufacturerId": 24,
+    "decisionStatus": "אושר",
+    "decisionReason": "אושר לאחר בחינת הרכב המוצר ומסמכי ייצור. עומד בדרישות הבריאות",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2023-02-08"
+  },
+  {
+    "countryId": 36,
+    "productId": 18,
+    "manufacturerId": 44,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרשת הסמכת הלל תקינה לשוק הגולמי של המדינה",
+    "conditions": "נדרשת הצהרת תכולת אלרגנים מפורטת על גבי האריזה",
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2022-01-27"
+  },
+  {
+    "countryId": 0,
+    "productId": 36,
+    "manufacturerId": 43,
+    "decisionStatus": "נדחה",
+    "decisionReason": "בעיות בשרשרת הקור הגורמות לחשש ממיקרוביולוגי",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2020-10-24"
+  },
+  {
+    "countryId": 49,
+    "productId": 14,
+    "manufacturerId": 38,
+    "decisionStatus": "אושר",
+    "decisionReason": "עמידה בתקנות האיחוד האירופי לבטיחות מזון. תוויות מאושרות",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2022-04-21"
+  },
+  {
+    "countryId": 43,
+    "productId": 46,
+    "manufacturerId": 49,
+    "decisionStatus": "אושר",
+    "decisionReason": "המוצר עומד בכל דרישות התקן המקומי ותקנות הייבוא",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2021-11-04"
+  },
+  {
+    "countryId": 28,
+    "productId": 2,
+    "manufacturerId": 37,
+    "decisionStatus": "אושר",
+    "decisionReason": "נבדק ואושר על ידי הרשות לבטיחות מזון. כל הרכיבים מותרים לשיווק",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2022-12-05"
+  },
+  {
+    "countryId": 20,
+    "productId": 26,
+    "manufacturerId": 11,
+    "decisionStatus": "אושר",
+    "decisionReason": "המוצר אינו מכיל חומרים אסורים על פי חוקי הייבוא של המדינה המבקשת",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2021-03-26"
+  },
+  {
+    "countryId": 10,
+    "productId": 16,
+    "manufacturerId": 30,
+    "decisionStatus": "אושר",
+    "decisionReason": "המוצר אינו מכיל חומרים אסורים על פי חוקי הייבוא של המדינה המבקשת",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2022-12-28"
+  },
+  {
+    "countryId": 29,
+    "productId": 4,
+    "manufacturerId": 9,
+    "decisionStatus": "אושר",
+    "decisionReason": "אושר לאחר בחינת הרכב המוצר ומסמכי ייצור. עומד בדרישות הבריאות",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2021-11-24"
+  },
+  {
+    "countryId": 5,
+    "productId": 25,
+    "manufacturerId": 0,
+    "decisionStatus": "אושר",
+    "decisionReason": "פיקוח וטרינרי עבר בהצלחה. מוצר מהחי תקני",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2022-09-04"
+  },
+  {
+    "countryId": 43,
+    "productId": 43,
+    "manufacturerId": 16,
+    "decisionStatus": "נדחה",
+    "decisionReason": "המוצר אינו עומד בתקנות הפסטוריזציה של המדינה המיובאת",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2024-07-27"
+  },
+  {
+    "countryId": 43,
+    "productId": 14,
+    "manufacturerId": 30,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרש אישור ספציפי מהרשות הווטרינרית של המדינה המיובאת",
+    "conditions": "חובה לעמוד בדרישות אריזה ייחודיות של המדינה המיובאת",
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2020-10-18"
+  },
+  {
+    "countryId": 40,
+    "productId": 29,
+    "manufacturerId": 44,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "המוצר עומד ברוב הדרישות אך נדרשים תנאים נוספים לאישור מלא",
+    "conditions": "נדרש אישור מעבדה עצמאי לכל אצווה לפני ייצוא",
+    "risks": "יש לוודא עמידה בגבולות חומרי השימור הנדרשים לפי תקן המדינה",
+    "decisionDate": "2022-11-14"
+  },
+  {
+    "countryId": 2,
+    "productId": 19,
+    "manufacturerId": 31,
+    "decisionStatus": "אושר",
+    "decisionReason": "מוצר דומה אושר בעבר לאותה מדינה. אין הגבלות ייבוא ידועות",
+    "conditions": null,
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2020-02-08"
+  },
+  {
+    "countryId": 29,
+    "productId": 23,
+    "manufacturerId": 42,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרשת הסמכת הלל תקינה לשוק הגולמי של המדינה",
+    "conditions": "נדרש אישור מעבדה עצמאי לכל אצווה לפני ייצוא",
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2024-07-19"
+  },
+  {
+    "countryId": 41,
+    "productId": 6,
+    "manufacturerId": 31,
+    "decisionStatus": "נדחה",
+    "decisionReason": "המוצר מכיל חומרי שימור האסורים על פי חוקי המדינה המבקשת",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2024-07-09"
+  },
+  {
+    "countryId": 13,
+    "productId": 28,
+    "manufacturerId": 28,
+    "decisionStatus": "אושר",
+    "decisionReason": "המוצר אינו מכיל חומרים אסורים על פי חוקי הייבוא של המדינה המבקשת",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2021-06-04"
+  },
+  {
+    "countryId": 3,
+    "productId": 25,
+    "manufacturerId": 17,
+    "decisionStatus": "אושר",
+    "decisionReason": "פיקוח וטרינרי עבר בהצלחה. מוצר מהחי תקני",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2021-02-28"
+  },
+  {
+    "countryId": 42,
+    "productId": 13,
+    "manufacturerId": 41,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרש אישור ספציפי מהרשות הווטרינרית של המדינה המיובאת",
+    "conditions": "חובה לעמוד בדרישות אריזה ייחודיות של המדינה המיובאת",
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2024-01-02"
+  },
+  {
+    "countryId": 36,
+    "productId": 13,
+    "manufacturerId": 4,
+    "decisionStatus": "אושר",
+    "decisionReason": "עמידה בתקנות האיחוד האירופי לבטיחות מזון. תוויות מאושרות",
+    "conditions": null,
+    "risks": "מוצר הדורש שרשרת קור עלול להיפגע בהובלה בינלאומית ארוכה",
+    "decisionDate": "2024-04-19"
+  },
+  {
+    "countryId": 21,
+    "productId": 9,
+    "manufacturerId": 38,
+    "decisionStatus": "אושר",
+    "decisionReason": "מוצר דומה אושר בעבר לאותה מדינה. אין הגבלות ייבוא ידועות",
+    "conditions": null,
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2020-05-28"
+  },
+  {
+    "countryId": 34,
+    "productId": 16,
+    "manufacturerId": 11,
+    "decisionStatus": "אושר",
+    "decisionReason": "המוצר עומד בכל דרישות התקן המקומי ותקנות הייבוא",
+    "conditions": null,
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2020-11-28"
+  },
+  {
+    "countryId": 0,
+    "productId": 22,
+    "manufacturerId": 15,
+    "decisionStatus": "אושר",
+    "decisionReason": "מוצר דומה אושר בעבר לאותה מדינה. אין הגבלות ייבוא ידועות",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2024-06-01"
+  },
+  {
+    "countryId": 3,
+    "productId": 8,
+    "manufacturerId": 47,
+    "decisionStatus": "נדחה",
+    "decisionReason": "לא עמד בתקנות התיוג המקומיות הנדרשות לייבוא",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2023-09-04"
+  },
+  {
+    "countryId": 28,
+    "productId": 23,
+    "manufacturerId": 32,
+    "decisionStatus": "אושר",
+    "decisionReason": "עמידה בתקנות האיחוד האירופי לבטיחות מזון. תוויות מאושרות",
+    "conditions": null,
+    "risks": "יש לוודא עמידה בגבולות חומרי השימור הנדרשים לפי תקן המדינה",
+    "decisionDate": "2024-02-15"
+  },
+  {
+    "countryId": 46,
+    "productId": 42,
+    "manufacturerId": 33,
+    "decisionStatus": "אושר",
+    "decisionReason": "המוצר עומד בכל דרישות התקן המקומי ותקנות הייבוא",
+    "conditions": null,
+    "risks": "יש לוודא עמידה בגבולות חומרי השימור הנדרשים לפי תקן המדינה",
+    "decisionDate": "2022-08-21"
+  },
+  {
+    "countryId": 30,
+    "productId": 25,
+    "manufacturerId": 27,
+    "decisionStatus": "אושר",
+    "decisionReason": "פיקוח וטרינרי עבר בהצלחה. מוצר מהחי תקני",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2020-08-23"
+  },
+  {
+    "countryId": 5,
+    "productId": 20,
+    "manufacturerId": 38,
+    "decisionStatus": "נדחה",
+    "decisionReason": "לא הוגשו אישורי הלל תקינה כנדרש לשוק המדינה",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2021-02-05"
+  },
+  {
+    "countryId": 24,
+    "productId": 38,
+    "manufacturerId": 33,
+    "decisionStatus": "נדחה",
+    "decisionReason": "חסרים תעודות מוצא ומסמכי ייצור נדרשים",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2022-08-17"
+  },
+  {
+    "countryId": 44,
+    "productId": 7,
+    "manufacturerId": 41,
+    "decisionStatus": "אושר",
+    "decisionReason": "עמידה בתקנות האיחוד האירופי לבטיחות מזון. תוויות מאושרות",
+    "conditions": null,
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2024-12-28"
+  },
+  {
+    "countryId": 28,
+    "productId": 14,
+    "manufacturerId": 26,
+    "decisionStatus": "אושר",
+    "decisionReason": "אושר לאחר בחינת הרכב המוצר ומסמכי ייצור. עומד בדרישות הבריאות",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2022-08-13"
+  },
+  {
+    "countryId": 20,
+    "productId": 27,
+    "manufacturerId": 20,
+    "decisionStatus": "אושר",
+    "decisionReason": "פיקוח וטרינרי עבר בהצלחה. מוצר מהחי תקני",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2022-06-05"
+  },
+  {
+    "countryId": 5,
+    "productId": 5,
+    "manufacturerId": 5,
+    "decisionStatus": "אושר",
+    "decisionReason": "המוצר אינו מכיל חומרים אסורים על פי חוקי הייבוא של המדינה המבקשת",
+    "conditions": null,
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2023-02-24"
+  },
+  {
+    "countryId": 35,
+    "productId": 3,
+    "manufacturerId": 37,
+    "decisionStatus": "אושר",
+    "decisionReason": "נבדק ואושר על ידי הרשות לבטיחות מזון. כל הרכיבים מותרים לשיווק",
+    "conditions": null,
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2024-09-11"
+  },
+  {
+    "countryId": 22,
+    "productId": 42,
+    "manufacturerId": 48,
+    "decisionStatus": "אושר",
+    "decisionReason": "בדיקות מעבדה הוכיחו עמידה בכל הסטנדרטים הנדרשים",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2023-12-02"
+  },
+  {
+    "countryId": 22,
+    "productId": 6,
+    "manufacturerId": 36,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרשת הסמכת הלל תקינה לשוק הגולמי של המדינה",
+    "conditions": "כל משלוח חייב לעבור בדיקת מכס ובריאות בנמל הכניסה",
+    "risks": "מוצר הדורש שרשרת קור עלול להיפגע בהובלה בינלאומית ארוכה",
+    "decisionDate": "2024-04-05"
+  },
+  {
+    "countryId": 6,
+    "productId": 22,
+    "manufacturerId": 35,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרש אישור ספציפי מהרשות הווטרינרית של המדינה המיובאת",
+    "conditions": "חובה לעמוד בדרישות אריזה ייחודיות של המדינה המיובאת",
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2022-02-25"
+  },
+  {
+    "countryId": 35,
+    "productId": 39,
+    "manufacturerId": 39,
+    "decisionStatus": "אושר",
+    "decisionReason": "בדיקות מעבדה הוכיחו עמידה בכל הסטנדרטים הנדרשים",
+    "conditions": null,
+    "risks": "יש לוודא עמידה בגבולות חומרי השימור הנדרשים לפי תקן המדינה",
+    "decisionDate": "2024-01-20"
+  },
+  {
+    "countryId": 11,
+    "productId": 17,
+    "manufacturerId": 44,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "המוצר עומד ברוב הדרישות אך נדרשים תנאים נוספים לאישור מלא",
+    "conditions": "נדרש אישור מעבדה עצמאי לכל אצווה לפני ייצוא",
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2022-06-12"
+  },
+  {
+    "countryId": 36,
+    "productId": 42,
+    "manufacturerId": 25,
+    "decisionStatus": "אושר",
+    "decisionReason": "המוצר עומד בכל דרישות התקן המקומי ותקנות הייבוא",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2020-03-24"
+  },
+  {
+    "countryId": 47,
+    "productId": 33,
+    "manufacturerId": 13,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרש אישור ספציפי מהרשות הווטרינרית של המדינה המיובאת",
+    "conditions": "נדרש אישור מעבדה עצמאי לכל אצווה לפני ייצוא",
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2023-07-15"
+  },
+  {
+    "countryId": 19,
+    "productId": 46,
+    "manufacturerId": 20,
+    "decisionStatus": "אושר",
+    "decisionReason": "המוצר עומד בכל דרישות התקן המקומי ותקנות הייבוא",
+    "conditions": null,
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2024-10-03"
+  },
+  {
+    "countryId": 10,
+    "productId": 39,
+    "manufacturerId": 3,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרשת הסמכת הלל תקינה לשוק הגולמי של המדינה",
+    "conditions": "נדרשת הצהרת תכולת אלרגנים מפורטת על גבי האריזה",
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2020-05-15"
+  },
+  {
+    "countryId": 38,
+    "productId": 28,
+    "manufacturerId": 26,
+    "decisionStatus": "אושר",
+    "decisionReason": "נבדק ואושר על ידי הרשות לבטיחות מזון. כל הרכיבים מותרים לשיווק",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2022-04-25"
+  },
+  {
+    "countryId": 27,
+    "productId": 7,
+    "manufacturerId": 18,
+    "decisionStatus": "אושר",
+    "decisionReason": "בדיקות מעבדה הוכיחו עמידה בכל הסטנדרטים הנדרשים",
+    "conditions": null,
+    "risks": "יש לוודא עמידה בגבולות חומרי השימור הנדרשים לפי תקן המדינה",
+    "decisionDate": "2024-08-17"
+  },
+  {
+    "countryId": 14,
+    "productId": 25,
+    "manufacturerId": 38,
+    "decisionStatus": "אושר",
+    "decisionReason": "בדיקות מעבדה הוכיחו עמידה בכל הסטנדרטים הנדרשים",
+    "conditions": null,
+    "risks": "מוצר הדורש שרשרת קור עלול להיפגע בהובלה בינלאומית ארוכה",
+    "decisionDate": "2020-01-07"
+  },
+  {
+    "countryId": 49,
+    "productId": 8,
+    "manufacturerId": 48,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "המוצר עומד ברוב הדרישות אך נדרשים תנאים נוספים לאישור מלא",
+    "conditions": "נדרשת תווית בשפה המקומית הכוללת את כל הרכיבים ותאריך תפוגה",
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2022-05-11"
+  },
+  {
+    "countryId": 47,
+    "productId": 27,
+    "manufacturerId": 11,
+    "decisionStatus": "נדחה",
+    "decisionReason": "נמצאו חריגות בבדיקות מעבדה מינימום הדרישות המיקרוביולוגיות",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2021-07-18"
+  },
+  {
+    "countryId": 4,
+    "productId": 25,
+    "manufacturerId": 47,
+    "decisionStatus": "אושר",
+    "decisionReason": "פיקוח וטרינרי עבר בהצלחה. מוצר מהחי תקני",
+    "conditions": null,
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2020-07-01"
+  },
+  {
+    "countryId": 20,
+    "productId": 36,
+    "manufacturerId": 27,
+    "decisionStatus": "נדחה",
+    "decisionReason": "חסרים תעודות מוצא ומסמכי ייצור נדרשים",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2024-07-23"
+  },
+  {
+    "countryId": 7,
+    "productId": 25,
+    "manufacturerId": 1,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "אישור מותנה בעמידה בתקנות קירור ושרשרת הקור",
+    "conditions": "כל משלוח חייב לעבור בדיקת מכס ובריאות בנמל הכניסה",
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2022-03-26"
+  },
+  {
+    "countryId": 5,
+    "productId": 27,
+    "manufacturerId": 6,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "אושר בכפוף לבדיקה נוספת של חומרי השימור בתפוקה",
+    "conditions": "יש לצרף תעודת בריאות ווטרינרית בתוקף לכל משלוח",
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2021-07-19"
+  },
+  {
+    "countryId": 19,
+    "productId": 21,
+    "manufacturerId": 14,
+    "decisionStatus": "אושר",
+    "decisionReason": "נבדק ואושר על ידי הרשות לבטיחות מזון. כל הרכיבים מותרים לשיווק",
+    "conditions": null,
+    "risks": "מוצר הדורש שרשרת קור עלול להיפגע בהובלה בינלאומית ארוכה",
+    "decisionDate": "2022-03-03"
+  },
+  {
+    "countryId": 49,
+    "productId": 22,
+    "manufacturerId": 22,
+    "decisionStatus": "נדחה",
+    "decisionReason": "הרכב המוצר כולל רכיב שאינו מאושר לשיווק במדינת היעד",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2021-04-04"
+  },
+  {
+    "countryId": 12,
+    "productId": 11,
+    "manufacturerId": 38,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "אושר בתנאי עמידה בדרישות התיוג המקומיות",
+    "conditions": "כל משלוח חייב לעבור בדיקת מכס ובריאות בנמל הכניסה",
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2021-11-03"
+  },
+  {
+    "countryId": 48,
+    "productId": 36,
+    "manufacturerId": 48,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "אישור מותנה בעמידה בתקנות קירור ושרשרת הקור",
+    "conditions": "יש לשמור על טמפרטורת קירור של 2-4 מעלות לאורך כל הדרך",
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2024-08-22"
+  },
+  {
+    "countryId": 9,
+    "productId": 28,
+    "manufacturerId": 4,
+    "decisionStatus": "נדחה",
+    "decisionReason": "לא הוגשו אישורי הלל תקינה כנדרש לשוק המדינה",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2023-08-21"
+  },
+  {
+    "countryId": 37,
+    "productId": 3,
+    "manufacturerId": 22,
+    "decisionStatus": "אושר",
+    "decisionReason": "פיקוח וטרינרי עבר בהצלחה. מוצר מהחי תקני",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2024-02-10"
+  },
+  {
+    "countryId": 2,
+    "productId": 3,
+    "manufacturerId": 23,
+    "decisionStatus": "אושר",
+    "decisionReason": "נבדק ואושר על ידי הרשות לבטיחות מזון. כל הרכיבים מותרים לשיווק",
+    "conditions": null,
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2022-02-21"
+  },
+  {
+    "countryId": 29,
+    "productId": 37,
+    "manufacturerId": 35,
+    "decisionStatus": "אושר",
+    "decisionReason": "עמידה בתקנות האיחוד האירופי לבטיחות מזון. תוויות מאושרות",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2020-08-26"
+  },
+  {
+    "countryId": 38,
+    "productId": 30,
+    "manufacturerId": 32,
+    "decisionStatus": "אושר",
+    "decisionReason": "נבדק ואושר על ידי הרשות לבטיחות מזון. כל הרכיבים מותרים לשיווק",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2021-01-15"
+  },
+  {
+    "countryId": 45,
+    "productId": 5,
+    "manufacturerId": 32,
+    "decisionStatus": "אושר",
+    "decisionReason": "פיקוח וטרינרי עבר בהצלחה. מוצר מהחי תקני",
+    "conditions": null,
+    "risks": "יש לוודא שתאריך התפוגה מספיק ליצוא ולשיווק במדינת היעד",
+    "decisionDate": "2021-01-08"
+  },
+  {
+    "countryId": 33,
+    "productId": 33,
+    "manufacturerId": 39,
+    "decisionStatus": "נדחה",
+    "decisionReason": "לא הוגשו אישורי הלל תקינה כנדרש לשוק המדינה",
+    "conditions": null,
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2021-06-12"
+  },
+  {
+    "countryId": 26,
+    "productId": 21,
+    "manufacturerId": 43,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרשת הסמכת הלל תקינה לשוק הגולמי של המדינה",
+    "conditions": "יש לשמור על טמפרטורת קירור של 2-4 מעלות לאורך כל הדרך",
+    "risks": "קיים סיכון לשינוי תקנות ייבוא במדינת היעד. מומלץ לעקוב",
+    "decisionDate": "2024-01-26"
+  },
+  {
+    "countryId": 21,
+    "productId": 6,
+    "manufacturerId": 35,
+    "decisionStatus": "אושר",
+    "decisionReason": "מוצר דומה אושר בעבר לאותה מדינה. אין הגבלות ייבוא ידועות",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2023-05-09"
+  },
+  {
+    "countryId": 5,
+    "productId": 37,
+    "manufacturerId": 42,
+    "decisionStatus": "נדחה",
+    "decisionReason": "חסרים תעודות מוצא ומסמכי ייצור נדרשים",
+    "conditions": null,
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2021-06-10"
+  },
+  {
+    "countryId": 38,
+    "productId": 45,
+    "manufacturerId": 5,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרשת הסמכת הלל תקינה לשוק הגולמי של המדינה",
+    "conditions": "יש לשמור על טמפרטורת קירור של 2-4 מעלות לאורך כל הדרך",
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2022-09-13"
+  },
+  {
+    "countryId": 42,
+    "productId": 44,
+    "manufacturerId": 47,
+    "decisionStatus": "אושר",
+    "decisionReason": "אושר לאחר בחינת הרכב המוצר ומסמכי ייצור. עומד בדרישות הבריאות",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2024-02-21"
+  },
+  {
+    "countryId": 1,
+    "productId": 23,
+    "manufacturerId": 19,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "אושר בכפוף לבדיקה נוספת של חומרי השימור בתפוקה",
+    "conditions": "חובה לעמוד בדרישות אריזה ייחודיות של המדינה המיובאת",
+    "risks": "מוצר הדורש שרשרת קור עלול להיפגע בהובלה בינלאומית ארוכה",
+    "decisionDate": "2021-04-11"
+  },
+  {
+    "countryId": 8,
+    "productId": 9,
+    "manufacturerId": 4,
+    "decisionStatus": "אושר",
+    "decisionReason": "המוצר עומד בכל דרישות התקן המקומי ותקנות הייבוא",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2022-02-17"
+  },
+  {
+    "countryId": 49,
+    "productId": 39,
+    "manufacturerId": 8,
+    "decisionStatus": "אושר",
+    "decisionReason": "מוצר דומה אושר בעבר לאותה מדינה. אין הגבלות ייבוא ידועות",
+    "conditions": null,
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2024-07-05"
+  },
+  {
+    "countryId": 44,
+    "productId": 39,
+    "manufacturerId": 10,
+    "decisionStatus": "אושר",
+    "decisionReason": "המוצר אינו מכיל חומרים אסורים על פי חוקי הייבוא של המדינה המבקשת",
+    "conditions": null,
+    "risks": "מוצר הדורש שרשרת קור עלול להיפגע בהובלה בינלאומית ארוכה",
+    "decisionDate": "2023-01-14"
+  },
+  {
+    "countryId": 28,
+    "productId": 39,
+    "manufacturerId": 18,
+    "decisionStatus": "אושר",
+    "decisionReason": "עמידה בתקנות האיחוד האירופי לבטיחות מזון. תוויות מאושרות",
+    "conditions": null,
+    "risks": "שינויי מטבע עלולים להשפיע על כדאיות הייצוא",
+    "decisionDate": "2023-04-18"
+  },
+  {
+    "countryId": 30,
+    "productId": 12,
+    "manufacturerId": 23,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "נדרש אישור ספציפי מהרשות הווטרינרית של המדינה המיובאת",
+    "conditions": "נדרשת הצהרת תכולת אלרגנים מפורטת על גבי האריזה",
+    "risks": "מומלץ לעקוב אחר שינויי חקיקה במדינת היעד",
+    "decisionDate": "2024-08-15"
+  },
+  {
+    "countryId": 10,
+    "productId": 12,
+    "manufacturerId": 38,
+    "decisionStatus": "אושר",
+    "decisionReason": "פיקוח וטרינרי עבר בהצלחה. מוצר מהחי תקני",
+    "conditions": null,
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2021-05-02"
+  },
+  {
+    "countryId": 35,
+    "productId": 6,
+    "manufacturerId": 45,
+    "decisionStatus": "אושר",
+    "decisionReason": "נבדק ואושר על ידי הרשות לבטיחות מזון. כל הרכיבים מותרים לשיווק",
+    "conditions": null,
+    "risks": "יש לשים לב לאלרגנים המצויים במוצר ולציינם בבירור",
+    "decisionDate": "2024-02-10"
+  },
+  {
+    "countryId": 17,
+    "productId": 28,
+    "manufacturerId": 32,
+    "decisionStatus": "אושר בתנאים",
+    "decisionReason": "אושר בתנאי עמידה בדרישות התיוג המקומיות",
+    "conditions": "כל משלוח חייב לעבור בדיקת מכס ובריאות בנמל הכניסה",
+    "risks": "יש לוודא שהמוצר עומד בתקנות ייבוא מזון עדכניות",
+    "decisionDate": "2021-07-03"
+  }
+]
