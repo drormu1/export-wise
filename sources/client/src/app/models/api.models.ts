@@ -11,6 +11,12 @@ export interface ManufacturersResponse {
   manufacturers: ManufacturerSummary[];
 }
 
+export interface ManufacturerRef {
+  id: number;
+  code: string;
+  name: string;
+}
+
 export interface Product {
   id: number;
   sku: string;
@@ -18,12 +24,7 @@ export interface Product {
   category: string;
   ingredients?: string | null;
   description?: string | null;
-}
-
-export interface ManufacturerRef {
-  id: number;
-  code: string;
-  name: string;
+  manufacturer?: ManufacturerRef; // present in /products/search results
 }
 
 export interface ProductsResponse {
@@ -31,8 +32,15 @@ export interface ProductsResponse {
   products: Product[];
 }
 
+export interface ProductSearchResponse {
+  query: string;
+  count: number;
+  products: Product[];
+}
+
 // UI-side chat model.
-export type MessageState = 'loading' | 'ok' | 'empty' | 'error';
+export type SearchMode = 'exact' | 'smart';
+export type MessageState = 'loading' | 'ok' | 'empty' | 'error' | 'info';
 
 export interface ChatMessage {
   id: number;

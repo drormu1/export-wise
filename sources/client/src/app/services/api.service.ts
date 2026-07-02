@@ -1,7 +1,7 @@
 import { Injectable, inject } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { ManufacturersResponse, ProductsResponse } from '../models/api.models';
+import { ManufacturersResponse, ProductSearchResponse, ProductsResponse } from '../models/api.models';
 
 /**
  * Talks to the ExportWise API. All URLs are relative to `/api`, which the Angular
@@ -15,6 +15,12 @@ export class ApiService {
   /** List of manufacturers with product counts — helps discover valid ids. */
   getManufacturers(): Observable<ManufacturersResponse> {
     return this.http.get<ManufacturersResponse>(`${this.base}/manufacturers`);
+  }
+
+  /** Exact (SQL) search: free-text over product name / category / manufacturer name. */
+  searchProducts(query: string): Observable<ProductSearchResponse> {
+    const params = new HttpParams().set('q', query.trim());
+    return this.http.get<ProductSearchResponse>(`${this.base}/products/search`, { params });
   }
 
   /**
