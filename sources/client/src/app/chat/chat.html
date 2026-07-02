@@ -1,7 +1,7 @@
 <div class="chat">
   <header class="chat__header">
     <div class="chat__brand">ExportWise</div>
-    <div class="chat__hint">הקלד מזהה יצרן (1–50) כדי לראות את המוצרים שלו</div>
+    <div class="chat__hint">חיפוש מוצרים — לפי שם, קטגוריה או יצרן</div>
   </header>
 
   <div class="messages" #scroll>
@@ -21,6 +21,9 @@
               @case ('empty') {
                 <span class="state state--muted">{{ m.text }}</span>
               }
+              @case ('info') {
+                <span class="state state--info">🧠 {{ m.text }}</span>
+              }
               @case ('ok') {
                 <div class="answer" dir="rtl">
                   <div class="answer__title">{{ m.text }}</div>
@@ -30,6 +33,9 @@
                         <div class="product__name">{{ p.name }}</div>
                         <div class="product__meta">
                           <span class="chip">{{ p.category }}</span>
+                          @if (p.manufacturer) {
+                            <span class="chip chip--mfr">{{ p.manufacturer.name }}</span>
+                          }
                           <span class="sku">{{ p.sku }}</span>
                         </div>
                         @if (p.description) {
@@ -45,23 +51,27 @@
         }
       </div>
     } @empty {
-      <div class="placeholder">👋 הקלד מזהה יצרן (למשל <b>1</b>) ולחץ Enter</div>
+      <div class="placeholder">👋 חפש מוצר, קטגוריה או יצרן (למשל <b>תנובה</b> או <b>מזון</b>)</div>
     }
   </div>
 
   <form class="composer" (submit)="$event.preventDefault(); submit(box)">
-    <textarea
-      #box
-      class="composer__input"
-      rows="1"
-      dir="auto"
-      placeholder="הקלד מזהה יצרן…"
-      [disabled]="sending()"
-      (input)="autosize(box)"
-      (keydown.enter)="onEnter($event, box)"
-    ></textarea>
-    <button type="submit" class="composer__send" [disabled]="sending()" aria-label="שלח">
-      ➤
-    </button>
+    <div class="mode" role="group" aria-label="מצב חיפוש">
+      <button type="button" class="mode__btn" [class.mode__btn--active]="mode() === 'exact'" (click)="setMode('exact')">🔎 מדויק</button>
+      <button type="button" class="mode__btn" [class.mode__btn--active]="mode() === 'smart'" (click)="setMode('smart')">🧠 חכם</button>
+    </div>
+    <div class="composer__row">
+      <textarea
+        #box
+        class="composer__input"
+        rows="1"
+        dir="auto"
+        [placeholder]="mode() === 'exact' ? 'חפש מוצר / קטגוריה / יצרן…' : 'שאל שאלה חופשית (בקרוב)…'"
+        [disabled]="sending()"
+        (input)="autosize(box)"
+        (keydown.enter)="onEnter($event, box)"
+      ></textarea>
+      <button type="submit" class="composer__send" [disabled]="sending()" aria-label="שלח">➤</button>
+    </div>
   </form>
 </div>

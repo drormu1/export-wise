@@ -1,7 +1,7 @@
 import { Component, ElementRef, effect, inject, signal, viewChild } from '@angular/core';
 import { HttpErrorResponse } from '@angular/common/http';
 import { ApiService } from '../services/api.service';
-import { ChatMessage } from '../models/api.models';
+import { ChatMessage, SearchMode } from '../models/api.models';
 
 @Component({
   selector: 'app-chat',
@@ -14,6 +14,7 @@ export class Chat {
 
   readonly messages = signal<ChatMessage[]>([]);
   readonly sending = signal(false);
+  readonly mode = signal<SearchMode>('exact');
   private nextId = 0;
 
   private readonly scroll = viewChild<ElementRef<HTMLDivElement>>('scroll');
@@ -27,6 +28,10 @@ export class Chat {
         setTimeout(() => (el.scrollTop = el.scrollHeight));
       }
     });
+  }
+
+  setMode(mode: SearchMode): void {
+    this.mode.set(mode);
   }
 
   /** Enter sends; Shift+Enter inserts a newline. */
@@ -58,36 +63,35 @@ export class Chat {
 
     this.push({ role: 'user', text });
 
-    const id = Number(text);
-    if (!Number.isInteger(id) || id <= 0) {
-      this.push({ role: 'assistant', text: 'יש להזין מזהה יצרן מספרי (למשל 1)', state: 'error' });
+    // Smart (semantic) mode is not wired to a vector backend yet.
+    if (this.mode() === 'smart') {
+      this.push({
+        role: 'assistant',
+        text: 'חיפוש סמנטי (AI) יתווסף בקרוב — יבוסס על מנוע חיפוש וקטורי. בינתיים השתמש במצב "מדויק".',
+        state: 'info',
+      });
       return;
     }
 
+    // Exact (SQL) search.
     const assistantId = this.push({ role: 'assistant', text: '', state: 'loading' });
     this.sending.set(true);
 
-    this.api.askForProducts(text).subscribe({
+    this.api.searchProducts(text).subscribe({
       next: (res) => {
-        if (res.products.length === 0) {
-          this.patch(assistantId, {
-            state: 'empty',
-            manufacturer: res.manufacturer,
-            text: `אין מוצרים ליצרן ${res.manufacturer.name}`,
-          });
+        if (res.count === 0) {
+          this.patch(assistantId, { state: 'empty', text: `לא נמצאו מוצרים עבור "${text}"` });
         } else {
           this.patch(assistantId, {
             state: 'ok',
-            manufacturer: res.manufacturer,
             products: res.products,
-            text: `המוצרים של ${res.manufacturer.name}`,
+            text: `נמצאו ${res.count} מוצרים עבור "${text}"`,
           });
         }
         this.sending.set(false);
       },
-      error: (err: HttpErrorResponse) => {
-        const msg = err.status === 404 ? `לא נמצא יצרן עם מזהה ${text}` : 'שגיאת רשת — נסה שוב';
-        this.patch(assistantId, { state: 'error', text: msg });
+      error: (_err: HttpErrorResponse) => {
+        this.patch(assistantId, { state: 'error', text: 'שגיאת רשת — נסה שוב' });
         this.sending.set(false);
       },
     });

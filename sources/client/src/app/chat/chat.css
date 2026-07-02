@@ -80,8 +80,19 @@
 .state--muted {
   color: var(--muted);
 }
+.state--info {
+  color: #1d4ed8;
+}
+
+.chip--mfr {
+  background: color-mix(in srgb, #1d4ed8 12%, transparent);
+  color: #1d4ed8;
+}
 
 /* Answer with product list */
+.answer {
+  width: min(560px, 78vw);
+}
 .answer__title {
   font-weight: 600;
   margin-bottom: 8px;
@@ -90,8 +101,8 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
   gap: 8px;
 }
 .product {
@@ -155,14 +166,44 @@
   position: sticky;
   bottom: 0;
   display: flex;
+  flex-direction: column;
   gap: 8px;
-  align-items: flex-end;
   width: 100%;
   max-width: 760px;
   margin-inline: auto;
   padding: 12px 16px 18px;
   background: color-mix(in srgb, var(--bg) 85%, transparent);
   backdrop-filter: blur(6px);
+}
+.composer__row {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+/* Mode toggle */
+.mode {
+  display: inline-flex;
+  gap: 4px;
+  align-self: center;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 3px;
+}
+.mode__btn {
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 13px;
+  padding: 5px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.mode__btn--active {
+  background: var(--accent);
+  color: #fff;
 }
 .composer__input {
   flex: 1 1 auto;
