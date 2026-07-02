@@ -1,0 +1,42 @@
+### Export-Wise API — REST test file
+# Works with the VS Code "REST Client" extension (humao.rest-client)
+# or JetBrains HTTP Client. Click "Send Request" above each request.
+#
+# Start the API first (from sources/api):  npm run start:dev
+# The API has no global prefix; port defaults to 3000 (PORT env var).
+
+@baseUrl = http://localhost:3000
+
+###############################################################################
+# Health
+###############################################################################
+
+### Health check -> { status, db, timestamp }
+GET {{baseUrl}}/health
+Accept: application/json
+
+###############################################################################
+# Manufacturers
+###############################################################################
+
+### List all manufacturers -> { manufacturers: [{ id, code, name, productCount }] }
+# @name listManufacturers
+GET {{baseUrl}}/manufacturers
+Accept: application/json
+
+### Products for a specific manufacturer -> { manufacturer, products }
+GET {{baseUrl}}/manufacturers/1/products
+Accept: application/json
+
+### Products for the first manufacturer returned by the list request above
+# (chained request: reuses the id from "listManufacturers")
+GET {{baseUrl}}/manufacturers/{{listManufacturers.response.body.manufacturers[0].id}}/products
+Accept: application/json
+
+### Unknown manufacturer id -> expected 404 Not Found
+GET {{baseUrl}}/manufacturers/999999/products
+Accept: application/json
+
+### Non-numeric id -> expected 400 Bad Request (ParseIntPipe rejects it)
+GET {{baseUrl}}/manufacturers/not-a-number/products
+Accept: application/json
