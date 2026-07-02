@@ -38,6 +38,30 @@ export interface ProductSearchResponse {
   products: Product[];
 }
 
+// Semantic (AI) search — mirrors the NestJS AiController contract.
+export interface SimilarCase {
+  score: number; // cosine similarity 0..1
+  decisionId: number;
+  manufacturer: string;
+  product: string;
+  category: string;
+  country: string;
+  region: string;
+  decisionStatus: string;
+  decisionReason?: string;
+  conditions?: string;
+  risks?: string;
+  decisionDate: string;
+}
+
+export interface SemanticSearchResponse {
+  query: string;
+  model: string;
+  count: number;
+  results: SimilarCase[];
+  disclaimer: string;
+}
+
 // UI-side chat model.
 export type SearchMode = 'exact' | 'smart';
 export type MessageState = 'loading' | 'ok' | 'empty' | 'error' | 'info';
@@ -48,5 +72,7 @@ export interface ChatMessage {
   text: string;
   manufacturer?: ManufacturerRef;
   products?: Product[];
+  cases?: SimilarCase[]; // semantic-search results
+  disclaimer?: string;
   state?: MessageState;
 }

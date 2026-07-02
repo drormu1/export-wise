@@ -4,8 +4,9 @@ import { Country } from '../entities/country.entity';
 import { Manufacturer } from '../entities/manufacturer.entity';
 import { Product } from '../entities/product.entity';
 import { CommitteeDecision } from '../entities/committee-decision.entity';
+import { DecisionEmbedding } from '../entities/decision-embedding.entity';
 
-const entities = [Country, Manufacturer, Product, CommitteeDecision];
+const entities = [Country, Manufacturer, Product, CommitteeDecision, DecisionEmbedding];
 
 /**
  * Builds the TypeORM connection options from the environment so the same

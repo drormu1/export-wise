@@ -139,6 +139,92 @@
   color: var(--muted);
 }
 
+/* Semantic (AI) similar-decision cases */
+.cases {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.case {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: var(--bg);
+}
+.case__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+.case__title {
+  font-weight: 600;
+}
+.case__meta {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-top: 4px;
+  flex-wrap: wrap;
+}
+.case__field {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--text);
+  line-height: 1.45;
+}
+.case__field b {
+  color: var(--muted);
+  font-weight: 600;
+}
+.case__field--risk {
+  color: #b42318;
+}
+.case__field--risk b {
+  color: #b42318;
+}
+
+.score {
+  font-size: 12px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+/* Decision status pills */
+.status {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--muted) 18%, transparent);
+  color: var(--muted);
+}
+.status--approved {
+  background: color-mix(in srgb, #16a34a 16%, transparent);
+  color: #15803d;
+}
+.status--rejected {
+  background: color-mix(in srgb, #dc2626 15%, transparent);
+  color: #b42318;
+}
+.status--conditional {
+  background: color-mix(in srgb, #d97706 18%, transparent);
+  color: #b45309;
+}
+
+.disclaimer {
+  margin-top: 10px;
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.45;
+  border-top: 1px dashed var(--border);
+  padding-top: 8px;
+}
+
 /* Typing dots */
 .dots {
   display: inline-flex;

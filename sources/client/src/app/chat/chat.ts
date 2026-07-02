@@ -14,7 +14,7 @@ export class Chat {
 
   readonly messages = signal<ChatMessage[]>([]);
   readonly sending = signal(false);
-  readonly mode = signal<SearchMode>('exact');
+  readonly mode = signal<SearchMode>('smart');
   private nextId = 0;
 
   private readonly scroll = viewChild<ElementRef<HTMLDivElement>>('scroll');
@@ -63,20 +63,15 @@ export class Chat {
 
     this.push({ role: 'user', text });
 
-    // Smart (semantic) mode is not wired to a vector backend yet.
+    const assistantId = this.push({ role: 'assistant', text: '', state: 'loading' });
+    this.sending.set(true);
+
     if (this.mode() === 'smart') {
-      this.push({
-        role: 'assistant',
-        text: 'חיפוש סמנטי (AI) יתווסף בקרוב — יבוסס על מנוע חיפוש וקטורי. בינתיים השתמש במצב "מדויק".',
-        state: 'info',
-      });
+      this.smartSearch(text, assistantId);
       return;
     }
 
     // Exact (SQL) search.
-    const assistantId = this.push({ role: 'assistant', text: '', state: 'loading' });
-    this.sending.set(true);
-
     this.api.searchProducts(text).subscribe({
       next: (res) => {
         if (res.count === 0) {
@@ -92,6 +87,37 @@ export class Chat {
       },
       error: (_err: HttpErrorResponse) => {
         this.patch(assistantId, { state: 'error', text: 'שגיאת רשת — נסה שוב' });
+        this.sending.set(false);
+      },
+    });
+  }
+
+  /** Smart (semantic) search: retrieve similar historical committee decisions. */
+  private smartSearch(text: string, assistantId: number): void {
+    this.api.semanticSearch(text).subscribe({
+      next: (res) => {
+        if (res.count === 0) {
+          this.patch(assistantId, {
+            state: 'empty',
+            text: `לא נמצאו החלטות דומות עבור "${text}"`,
+          });
+        } else {
+          this.patch(assistantId, {
+            state: 'ok',
+            cases: res.results,
+            disclaimer: res.disclaimer,
+            text: `נמצאו ${res.count} החלטות דומות עבור "${text}"`,
+          });
+        }
+        this.sending.set(false);
+      },
+      error: (err: HttpErrorResponse) => {
+        // 503 => embedding service (Ollama) is down; anything else is a generic failure.
+        const message =
+          err.status === 503
+            ? 'שירות החיפוש הסמנטי אינו זמין כרגע (מנוע ה‑embeddings). נסה שוב מאוחר יותר.'
+            : 'שגיאת רשת — נסה שוב';
+        this.patch(assistantId, { state: 'error', text: message });
         this.sending.set(false);
       },
     });

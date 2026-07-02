@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "db:seed": "ts-node src/seed/seed.runner.ts",
+    "vector:seed": "ts-node src/vector/vector-seed.runner.ts",
     "build": "tsc",
     "start:dev": "ts-node src/main.ts",
     "start": "node dist/src/main.js",

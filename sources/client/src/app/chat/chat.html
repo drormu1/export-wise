@@ -27,23 +27,60 @@
               @case ('ok') {
                 <div class="answer" dir="rtl">
                   <div class="answer__title">{{ m.text }}</div>
-                  <ul class="products">
-                    @for (p of m.products; track p.id) {
-                      <li class="product">
-                        <div class="product__name">{{ p.name }}</div>
-                        <div class="product__meta">
-                          <span class="chip">{{ p.category }}</span>
-                          @if (p.manufacturer) {
-                            <span class="chip chip--mfr">{{ p.manufacturer.name }}</span>
+                  @if (m.cases) {
+                    <ul class="cases">
+                      @for (c of m.cases; track c.decisionId) {
+                        <li class="case">
+                          <div class="case__head">
+                            <span
+                              class="status"
+                              [class.status--approved]="c.decisionStatus === 'אושר'"
+                              [class.status--rejected]="c.decisionStatus === 'נדחה'"
+                              [class.status--conditional]="c.decisionStatus === 'אושר בתנאים'"
+                              >{{ c.decisionStatus }}</span
+                            >
+                            <span class="score" title="מידת הדמיון">{{ (c.score * 100).toFixed(0) }}% דמיון</span>
+                          </div>
+                          <div class="case__title">{{ c.product }} · {{ c.manufacturer }}</div>
+                          <div class="case__meta">
+                            <span class="chip">{{ c.category }}</span>
+                            <span class="chip chip--mfr">{{ c.country }} ({{ c.region }})</span>
+                            <span class="sku">{{ c.decisionDate }}</span>
+                          </div>
+                          @if (c.decisionReason) {
+                            <div class="case__field"><b>נימוק:</b> {{ c.decisionReason }}</div>
                           }
-                          <span class="sku">{{ p.sku }}</span>
-                        </div>
-                        @if (p.description) {
-                          <div class="product__desc">{{ p.description }}</div>
-                        }
-                      </li>
+                          @if (c.conditions) {
+                            <div class="case__field"><b>תנאים:</b> {{ c.conditions }}</div>
+                          }
+                          @if (c.risks) {
+                            <div class="case__field case__field--risk"><b>סיכונים:</b> {{ c.risks }}</div>
+                          }
+                        </li>
+                      }
+                    </ul>
+                    @if (m.disclaimer) {
+                      <div class="disclaimer">⚠️ {{ m.disclaimer }}</div>
                     }
-                  </ul>
+                  } @else {
+                    <ul class="products">
+                      @for (p of m.products; track p.id) {
+                        <li class="product">
+                          <div class="product__name">{{ p.name }}</div>
+                          <div class="product__meta">
+                            <span class="chip">{{ p.category }}</span>
+                            @if (p.manufacturer) {
+                              <span class="chip chip--mfr">{{ p.manufacturer.name }}</span>
+                            }
+                            <span class="sku">{{ p.sku }}</span>
+                          </div>
+                          @if (p.description) {
+                            <div class="product__desc">{{ p.description }}</div>
+                          }
+                        </li>
+                      }
+                    </ul>
+                  }
                 </div>
               }
             }
@@ -66,7 +103,7 @@
         class="composer__input"
         rows="1"
         dir="auto"
-        [placeholder]="mode() === 'exact' ? 'חפש מוצר / קטגוריה / יצרן…' : 'שאל שאלה חופשית (בקרוב)…'"
+        [placeholder]="mode() === 'exact' ? 'חפש מוצר / קטגוריה / יצרן…' : 'תאר מקרה יצוא — נמצא החלטות דומות…'"
         [disabled]="sending()"
         (input)="autosize(box)"
         (keydown.enter)="onEnter($event, box)"

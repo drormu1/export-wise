@@ -40,3 +40,26 @@ Accept: application/json
 ### Non-numeric id -> expected 400 Bad Request (ParseIntPipe rejects it)
 GET {{baseUrl}}/manufacturers/not-a-number/products
 Accept: application/json
+
+###############################################################################
+# AI — Semantic search over historical committee decisions
+# Requires: db:seed + vector:seed already run, and Ollama reachable at OLLAMA_URL
+# with the EMBED_MODEL pulled (default nomic-embed-text).
+# -> { query, model, count, results: [{ score, decisionId, ... }], disclaimer }
+###############################################################################
+
+### Semantic search (Hebrew free text) -> top 5 similar decisions
+GET {{baseUrl}}/ai/search?q=גבינה צהובה לייצוא לגרמניה
+Accept: application/json
+
+### Semantic search with an explicit result count
+GET {{baseUrl}}/ai/search?q=מוצרי חלב שנדחו בגלל תווית&topK=10
+Accept: application/json
+
+### Different intent — approvals for a beverage
+GET {{baseUrl}}/ai/search?q=משקה שאושר לייצוא למזרח התיכון&topK=5
+Accept: application/json
+
+### Empty query -> expected empty result set (count = 0), no LLM call
+GET {{baseUrl}}/ai/search?q=
+Accept: application/json

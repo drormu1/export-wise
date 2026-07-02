@@ -1,7 +1,12 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { ManufacturersResponse, ProductSearchResponse, ProductsResponse } from '../models/api.models';
+import {
+  ManufacturersResponse,
+  ProductSearchResponse,
+  ProductsResponse,
+  SemanticSearchResponse,
+} from '../models/api.models';
 
 /**
  * Talks to the ExportWise API. All URLs are relative to `/api`, which the Angular
@@ -21,6 +26,15 @@ export class ApiService {
   searchProducts(query: string): Observable<ProductSearchResponse> {
     const params = new HttpParams().set('q', query.trim());
     return this.http.get<ProductSearchResponse>(`${this.base}/products/search`, { params });
+  }
+
+  /**
+   * Smart (semantic) search: embeds the free-text query on the backend and returns
+   * the most similar historical committee decisions with similarity scores.
+   */
+  semanticSearch(query: string, topK = 10): Observable<SemanticSearchResponse> {
+    const params = new HttpParams().set('q', query.trim()).set('topK', String(topK));
+    return this.http.get<SemanticSearchResponse>(`${this.base}/ai/search`, { params });
   }
 
   /**
